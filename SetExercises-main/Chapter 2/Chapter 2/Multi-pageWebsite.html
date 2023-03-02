@@ -1,0 +1,46 @@
+<!--
+    Using the one-page website you created, clone it into a new directory and split the information down into a simple multi-page website.
+
+        - An individual page for: plot, key information, cast and/or creative team, characters and any reviews you can find.
+        - Put your new pages in a subdirectory called "pages".
+        - Ensure that each page has a navigation bar.
+-->
+
+<!DOCTYPE html>
+
+<!--
+    alright, so for this exercise, i took my one-page website and moved it into different pages
+-->
+<html>
+
+    <!--i put the same title and links for the fonts (as this is the same website)-->
+    <head>
+        <title>Harry Potter</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="multipage.css">
+    </head>
+
+    <!--in the body, i made a few modifications-->
+    <body>
+        <div id="intro">
+            <!--i made a big title to let users know where they are;-->
+            <h1>The Wizarding World</h1>
+            
+            <p class="nav">
+                <!--
+                    and to make the website multi-paged, i used an anchor <a> tag with the links of the individual pages, 
+                    with the same information as the one-page website
+
+                    once the links are clicked, the user will be lead into that page, showing thst specific part only
+                    (see overview.html for more explanations)
+                -->
+                <a id="qckfnd">Nav Bar:</a> <a href="overview.html">Overview</a> | <a href="plot.html">Plot</a> | <a href="castandcharacters.html">Cast and Characters</a> | <a href="reviews.html">Movie Reviews</a> | <a href="references.html">References</a>
+            </p>
+        </div>
+    </body>
+</html>

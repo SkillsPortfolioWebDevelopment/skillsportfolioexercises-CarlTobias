@@ -1,0 +1,36 @@
+/* this stylesheet allows me as a programmer to modify a page for the viewer's pleasure */
+
+/* it begins with the tag name followed by a closed curly bracket that has different instructions inside to alter certain things */
+h1{
+    /* this changes font size */
+    font-size: 3rem;
+    /* this changes the text alignment */
+    text-align: center;
+}
+
+h2{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#author{
+    font-size: 1.1rem;
+    text-align: center;
+    /* this changes the font of the said tag */
+    font-style: italic;
+}
+
+p{
+    /* this changes the line height */
+    line-height: 1.3;
+    text-align: justify;
+}
+
+body{
+    /* this changes the color of the background */
+    background-color: aliceblue;
+    /* this determines the font family of the text within the tag */
+    font-family: Georgia, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
