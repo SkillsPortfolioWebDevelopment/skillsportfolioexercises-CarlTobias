@@ -1,0 +1,78 @@
+/*we have the exact same properties here that can be found in harrypotter.css, except the last one*/
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    color: #0e1a40;
+    text-align: center;
+}
+
+#headers{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #740001;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#titles{
+    font-family: 'Gloock', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a472a;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    color: #372e29;
+
+    padding: 35px;
+    background-color: #726255;
+}
+
+#qckfnd{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav{
+    text-align: center;
+    
+    background-color: #5d5d5d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.search{
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+#casthead{
+    font-weight: bold;
+    color: #1a472a;
+
+    padding-bottom: 15px;
+}
+
+/*the id here is used for an extra page*/
+#intro{
+    /*these properties work together to make the id into the canter of the screen*/
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

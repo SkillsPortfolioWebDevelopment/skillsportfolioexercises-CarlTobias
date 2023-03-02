@@ -1,0 +1,444 @@
+<!--
+    Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+        - An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find.
+        - A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+        - A link to the actual website of the film/game etc. which opens in a new tab when clicked.
+        - Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+        - At least two classes.
+        - One link styled as a button.
+-->
+
+<!--i started with the usual tags needed like <!DOCTYPE>, <html>, <head>, and <body>-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!--inside the <head> tag, i input the title for the page and certain links-->
+        <title>Harry Potter</title>
+
+        <!--the first 5 links are used to import fonts from googlefonts.com-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <!--and this is the usual link tag used to connect the css file-->
+        <link rel="stylesheet" href="harrypotter.css">
+    </head>
+
+    <body>
+        <!--inside the <body> tag, we have the header for the main title;-->
+        <h1>The Wizarding World</h1>
+        
+        <!--the navigation bar for easy looking (in here, i classified <p> as "nav"...)-->
+        <p class="nav">
+            <!--
+                i input an id for the "Quick Find" text to make changes to the text in css
+                and i used anchor <a> tags to add links to text so that it will direct the user to that certain point on the page when clicked
+                (the links are connected to IDs, seen later)
+            -->
+            <a id="qckfnd">Quick Find:</a> <a href="#overview">Overview</a> | <a href="#plot">Plot</a> | <a href="#caNcha">Cast and Characters</a> | <a href="#reviews">Movie Reviews</a> | <a href="#references">References</a>
+        </p>
+
+        <!--this here is the second paragraph <p> tag which holds all sections that can be found in the Nav Bar-->
+        <p>
+            <br><br>
+            <!--
+                in here, we have the first main section called "Overview"
+                (as seen, i used the unordered list <ul> tag to properly id the section)
+            -->
+            <ul id="overview">
+                <p>
+                    <!--i used div for the top text to identify it as a header, to make it identical to other headers on the page-->
+                    <div id="headers">Overview</div>
+
+                    The first book introduces readers to Harry Potter, an 11 year old boy that lives in the world of non-magical beings, 
+                    or Muggles as they are called. On his 11th birthday he is visited by the half-giant Rubeus Hagrid and is introduced to the 
+                    wizarding world and enrolled him in the Hogwarts School for Witches and Wizards. Hogwarts is where Harry meets his two best 
+                    friends Ron Weasley and Hermione Granger, and the great wizard and headmaster of the school, Albus Dumbledore. The story 
+                    revolves around Harry during his studies at Hogwarts, Harry learns of the reasons why he has magical powers, who his parents 
+                    are and how they died, and his connection with the man who killed them, the evil wizard Lord Voldemort.
+                    <br><br>
+
+                    In his early years at Hogwarts, Harry learns of how Lord Voldemort killed Harry's parents and even tried to kill Harry as well. 
+                    But mysteriously Voldemort was defeated and believed to have died while Harry survived having only the scar on his forehead as 
+                    proof of their encounter. In the first four books Voldemort, who is not dead but merely in hiding and trying to regain his lost 
+                    powers, have tried to kill Harry using different methods from the shadows, but thanks to the help of his friends Ron and Hermione,
+                    Harry and the forces of good always triumphs in the end.
+                    <br><br>
+
+                    In the end of the fourth book, Lord Voldemort has regained his old body and his full powers as well. At this time he openly 
+                    declares war on Hogwarts and the entire wizarding world. At this time the story revolving around Harry has become less of a 
+                    mystery and changed onto something that is more of a conflict between two warring factions. At this point Albus Dumbledore 
+                    decides that he can no longer protect Harry from Voldemort, so he decides to train Harry personally on the ways of magic.
+                    <br><br>
+
+                    While under Dumbledore's tutelage, Harry becomes a more powerful wizard that is able to protect himself and others. He gets to 
+                    show what he has learned from Dumbledore when Voldemort's army, mostly composed of escaped convicts from Azkaban 
+                    (the high-security prison for evil wizards), attacked Harry and his friends.
+                    <br><br>
+
+                    In the sixth book of the series "The Half-blood Prince," Dumbledore tells Harry of the only way that Voldemort can be defeated. 
+                    Voldemort has divided his soul and placed them in various objects called Horcruxes and hid them all over the wizarding world, 
+                    to defeat Voldemort they need to destroy all of the Horcruxes.
+                    <br><br>
+
+                    Dumbledore and Harry thus set out on a mission to destroy the containers of Lord Voldemort's soul, but an unexpected traitorous 
+                    act tragically ends the life of Albus Dumbledore, leaving Harry wondering just how they can expect to defeat the evil of Voldemort
+                    now. In the last book "The Deathly Hollows," Harry finds out that he himself is a Horcrux. This forces him to make a decision 
+                    that could either destroy or save the wizarding world.
+                    <br><br>
+
+                    This is just a brief summary on how the events in the world of Harry Potter unfolded. If you want to have a deeper understanding 
+                    of the world of Harry Potter, try and read the books and prepare to dive into a fantastical and magical world.
+                </p>
+            </ul>
+
+
+            <!--we have the next section here, the "Plot"-->
+            <ul  id="plot">
+
+                <p>
+                    <!--again, this is DIVided from the rest of the paragraph <p> tag to make it in line with other headers-->
+                    <div id="headers">Plot</div>
+
+                    <!--what i did here is similar to the headers, but this will be seen only on the titles of the books and movies-->
+                    <div id="titles">Book One: The Sorcerer's Stone</div>
+
+                    When mysterious letters start arriving on his doorstep, Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry.
+                    <br><br>
+
+                    They are swiftly confiscated by his aunt and uncle.
+                    <br><br>
+
+                    Then, on Harry's eleventh birthday, a strange man bursts in with some important news: Harry Potter is a wizard and has been awarded a place to study at Hogwarts.
+                    <br><br>
+
+                    And so the first of the Harry Potter adventures is set to begin.
+                    <br><br>
+
+
+                    <div id="titles">Book Two: The Chamber of Secrets</div>
+
+                    Throughout the summer holidays after his first year at Hogwarts School of Witchcraft and Wizardry, Harry Potter has been 
+                    receiving sinister warnings from a house-elf called Dobby.
+                    <br><br>
+
+                    Now, back at school to start his second year, Harry hears unintelligible whispers echoing through the corridors.
+                    <br><br>
+
+                    Before long the attacks begin: students are found as if turned to stone.
+                    <br><br>
+
+                    Dobby's predictions seem to be coming true.
+                    <br><br>
+
+
+                    <div id="titles">Book Three: The Prisoner of Azkaban</div>
+
+                    For Harry Potter, it's the start of another far-from-ordinary year at Hogwarts when the Knight Bus crashes through the 
+                    darkness and comes to an abrupt halt in front of him.
+                    <br><br>
+
+                    It turns out that Sirius Black, mass-murderer and follower of Lord Voldemort, has escaped - and they say he is coming 
+                    after Harry.
+                    <br><br>
+
+                    In his first Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves.
+                    <br><br>
+
+                    And perhaps most frightening of all are the Dementors patrolling the school grounds with their soul-sucking kiss - in 
+                    search of fresh victims.
+                    <br><br>
+
+
+                    <div id="titles">Book Four: The Goblet of Fire</div>
+
+                    The rules of the Triwizard Tournament, which is about to take place at Hogwarts, only allow wizards over the age of seventeen 
+                    to enter.
+                    <br><br>
+
+                    So Harry can only daydream about winning.
+                    <br><br>
+
+                    Then, to his surprise, on Halloween when the Goblet of Fire makes its selection, his name is picked out of the magical cup.
+                    <br><br>
+
+                    Harry will face life-endangering tasks, dragons and Dark wizards.
+                    <br><br>
+
+                    He'll have to rely on the help of his friends if he is to make it through the contest alive.
+                    <br><br>
+
+
+                    <div id="titles">Book Five: The Order of the Phoenix</div>
+
+                    After the Dementors' attack on his cousin Dudley, Harry knows he is about to become Voldemort's next target.
+                    <br><br>
+
+                    Although many are denying the Dark Lord's return, Harry is not alone, and a secret order is gathering at Grimmauld Place to 
+                    fight against the Dark forces.
+                    <br><br>
+
+                    Meanwhile, Voldemort's savage assaults on Harry's mind are growing stronger every day.
+                    <br><br>
+
+                    He must allow Professor Snape to teach him to protect himself before he runs out of time.
+                    <br><br>
+
+
+                    <div id="titles">Book Six: The Half-Blood Prince</div>
+
+                    One summer night, when Dumbledore arrives at Privet Drive to collect Harry Potter, his wand hand is blackened and shrivelled, 
+                    but he will not reveal why.
+                    <br><br>
+
+                    Rumours and suspicion spread through the wizarding world - it feels as if even Hogwarts itself might be under threat.
+                    <br><br>
+
+                    Harry is convinced that Malfoy bears the Dark Mark: could there be a Death Eater amongst them?
+                    <br><br>
+
+                    He will need powerful magic and true friends as, with the help of Dumbledore, he investigates Voldemort's darkest secrets.
+                    <br><br>
+
+
+                    <div id="titles">Book Seven: The Deathly Hallows</div>
+
+                    Harry Potter is leaving Privet Drive for the last time. But as he climbs into the sidecar of Hagrid's motorbike and they take 
+                    to the skies, he knows Lord Voldemort and the Death Eaters will not be far behind.
+                    <br><br>
+
+                    The protective charm that has kept him safe until now is broken. But the Dark Lord is breathing fear into everything he loves. 
+                    And he knows he can't keep hiding.
+                    <br><br>
+
+                    To stop Voldemort, Harry knows he must find the remaining Horcruxes and destroy them.
+                    <br><br>
+
+                    He will have to face his enemy in one final battle.
+                </p>
+            </ul>
+
+            <!--next, we have the "Cast and Characters" section-->
+            <ul id="caNcha">
+                <div id="headers">Cast and Characters</div>
+
+                Here you will see all the cast and characters in the movies.<br>
+                <!--and since i only need specific text bolded here...-->
+                They have been sorted into 5 categories and are <strong>NOT</strong> repeated throughout.
+                <br><br>
+
+                P.S. I might not have missed some because the cast is quite big.
+                <br><br><br>
+
+                <!--... and here, i used the bold <strong> tag-->
+                <strong>Layout: "Character Name - Cast Name"</strong>
+                <br><br>
+
+                <!--in here i also used another type of header, used for separating character categories-->
+                <a id="casthead">Students:</a>
+                <br>
+                Bill Weasley - Richard Fish <br>
+                Blaise Zabini - Louis Cordice <br>
+                Cedric Diggory - Robert Pattinson <br>
+                Charlie Weasley - Alex Crockford <br>
+                Dean Thomas - Alfred Enoch <br>
+                Draco Malfoy - Tom Felton <br>
+                Fred Weasley - James Phelps <br>
+                George Weasley - Oliver Phelps <br>
+                Gregory Goyle - Josh Herdman <br>
+                Harry Potter - Daniel Radcliffe <br>
+                Neville Longbottom - Matthew Lewis <br>
+                Ron Weasley - Rupert Grint <br>
+                Vincent Crabbe - Jamie Waylett <br>
+                Ginny Weasley - Bonnie Wright <br>
+                Hermoine Granger - Emma Watson <br>
+                Luna Lovegood - Evanna Lynch <br>
+                <br><br><br>
+
+
+
+                <a id="casthead">Professors:</a>
+                <br>
+                Amycus Carrow - Ralph Ineson <br>
+                Alastor Moody - Brendan Gleeson <br>
+                Albus Dumbledore - Richard Harris, Michael Gambon <br>
+                Flitwick - Warwick Davis <br>
+                Gilderoy Lockhart - Kenneth Branagh <br>
+                Quirinus Quirrell - Ian Hart <br>
+                Remus Lupin - David Thewlis <br>
+                Rubeus Hagrid - Robbie Coltrane <br>
+                Severus Snape - Alan Rickman <br>
+                Minerva McGonagall - Maggie Smith <br>
+                Patrcia (or Sibyll) Trelawney - Emma Thompson <br><br>
+                    
+                Dolores Umbridge - Imelda Staunton <br>
+                <br><br><br>
+                    
+                    
+                    
+
+                <a id="casthead">Order of the Phoenix Members:</a>
+                <br>
+                Aberforth Dumbledore - Jim McManus, Ciaran Hinds <br>
+                Arthur Weasley - Mark Williams <br>
+                Benjy Fenwick - (did not appear in the movies) <br>
+                Caradoc Dearborn - (did not appear in the movies) <br>
+                Dedalus Diggle - David Brett <br>
+                Edgar Bones - Cliff Lanning <br>
+                Elphias Doge - Peter Cartwright <br>
+                Fabian and Gideon Prewett - (played by the twins who play Fred and George) <br>
+                James Potter - Adrian Rawlins, Robbie Jarvis, Alfie McIlwain <br>
+                Kingsley Shacklebolt - George Harris <br>
+                Mundungus Fletcher - Andy Linden <br>
+                Sirius Black - Gary Oldman <br>
+                Sturgis Podmore - (did not appear in the movies) <br>
+                Dorcas Meadowes - (did not appear in the movies) <br>
+                Emmeline Vance - Drigitte Millar <br>
+                Fleur Delacour - Clemence Poesy <br>
+                Hestia Jones - (did not appear in the movies) <br>
+                Lily Potter - Geraldine Somerville, Ellie Darcey-Alden, Susie Shinner <br>
+                Marlene McKinnon - (did not appear in the movies) <br>
+                Mrs. Molly Weasely - Julie Walters <br>
+                Nymphadora Tonks - Natalia Tena <br>
+                <br><br><br>
+                    
+                    
+                    
+                <a id="casthead">Death Eaters:</a>
+                <br>
+                Lord Voldemort - Ralph Fiennes <br><br>
+
+                Bartemus Crouch Jr. - David Tennant <br>
+                Corban Yaxley - Peter Mullan <br>
+                Igor Karkaroff - Predrag Bjelac <br>
+                Lucius Malfoy - Jason Isaacs <br>
+                Peter Pettigrew (Wormtail) - Timothy Spall <br>                  
+                Bellatrix Lestrange - Helena Bonham Carter <br>
+                <br><br><br>
+
+
+
+                <a id="casthead">Muggles, Ghosts, and Elves:</a>
+                <br>
+                Dudley Dursley - Harry Melling <br>
+                Vernon Dursley - Richard Griffiths <br>
+                Petunia Dursley - Fiona Shaw <br><br>
+
+                Bloody Baron - Terence Bayler <br>
+                Nearly Headless Nick - John Cleese <br>
+                Fat Friar - Simon Fisher-Becker <br>
+                Grey Lady - Nina Young <br>
+                Moaning Myrtle - Shirley Henderson <br><br>
+
+                Dobby - Toby Jones <br>
+                Kreacher - Timothy Bateson, Simon McBurney <br>
+                Winky - (did not appear in the movies)
+            </ul>
+
+            <!--and the second to last section here, "Movie Reviews"-->
+            <ul id="reviews">
+                <div id="headers">Movie Reviews</div>
+
+                <!--i added a link here for users to check the website where the reviews are from-->
+                The ratings for the movies are based on results from <a href="https://www.rottentomatoes.com/search?search=harry%20potter">Rotten Tomatoes</a>.
+                <br><br>
+
+                <div id="titles">Harry Potter and the Sorcerer's Stone</div>
+                <strong>Tomatometer:</strong> 81%
+                <strong>Audience Score:</strong> 82%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Harry Potter and the Sorcerer's Stone adapts its source material faithfully while condensing the novel's overstuffed narrative 
+                into an involving -- and often downright exciting -- big-screen magical caper.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Chamber of Secrets</div>
+                <strong>Tomatometer:</strong> 82%
+                <strong>Audience Score:</strong> 80%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Though perhaps more enchanting for younger audiences, Chamber of Secrets is nevertheless both darker and livelier than its 
+                predecessor, expanding and improving upon the first film's universe.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Prisoner of Azkaban</div>
+                <strong>Tomatometer:</strong> 90%
+                <strong>Audience Score:</strong> 86%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Under the assured direction of Alfonso Cuaron, Harry Potter and the Prisoner of Azkaban triumphantly strikes a delicate balance 
+                between technical wizardry and complex storytelling.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Goblet of Fire</div>
+                <strong>Tomatometer:</strong> 88%
+                <strong>Audience Score:</strong> 74%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                The main characters are maturing, and the filmmakers are likewise improving on their craft; vibrant special effects and assured 
+                performances add up to what is the most complex yet of the Harry Potter films.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Order of the Phoenix</div>
+                <strong>Tomatometer:</strong> 78%
+                <strong>Audience Score:</strong> 81%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                It's not easy to take the longest Harry Potter book and streamline it into the shortest HP movie, but director David Yates does a 
+                bang up job of it, creating an Order of the Phoenix that's entertaining and action-packed.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Half-Blood Prince</div>
+                <strong>Tomatometer:</strong> 84%
+                <strong>Audience Score:</strong> 78%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Dark, thrilling, and occasionally quite funny, Harry Potter and the Half-Blood Prince is also visually stunning and emotionally 
+                satisfying.
+                <br><br>
+
+
+                <div id="titles">Harry Potter and the Deathly Hallows: Part 1</div>
+                <strong>Tomatometer:</strong> 77%
+                <strong>Audience Score:</strong> 85%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                It can't help but feel like the prelude it is, but Deathly Hallows: Part I is a beautifully filmed, emotionally satisfying 
+                penultimate installment for the Harry Potter series.
+                <br><br>
+
+                
+                <div id="titles">Harry Potter and the Deathly Hallows: Part 2</div>
+                <strong>Tomatometer:</strong> 96%
+                <strong>Audience Score:</strong> 89%
+                <br><br>
+                <strong>Critics Consensus:</strong><br>
+                Thrilling, powerfully acted, and visually dazzling, Deathly Hallows Part II brings the Harry Potter franchise to a 
+                satisfying -- and suitably magical -- conclusion.
+                <br><br>
+            </ul>
+
+            <!--finally, we also have "References" for the websites i used for information-->
+            <ul id="references">
+                <div id="headers">References</div>
+
+                <!--
+                    now here, i took information from rotten tomatoes to give the audience truthful facts about each movie
+                    (see references.html for the final part)
+                -->
+                <a id="casthead">Overview Descriptions:</a> <a href="https://www.teach-nology.com/teachers/child_lit/harry_potter/" target="_blank">www.teach-nology.com</a> <br>
+                <a id="casthead">Plot Descriptions:</a> <a href="https://stories.jkrowling.com/en-us/harrypotter/the-harry-potter-stories/" target="_blank">stories.jkrowling.com</a> <br>
+                <a id="casthead">Cast and Character List:</a> <a href="https://harrypotter.fandom.com/wiki/List_of_Harry_Potter_cast_members" target="_blank">harrypotter.fandom.com</a> <br>
+                <a id="casthead">Movie Reviews:</a> <a href="https://www.rottentomatoes.com/search?search=harry%20potter" target="_blank">www.rottentomatoes.com</a>
+            </ul>
+        </p>
+    </body>
+</html>
