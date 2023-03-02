@@ -1,0 +1,33 @@
+/*
+    i separated the style commands into three groups:
+    body, h1, and p
+
+    in those groups are the different commands that are specific to their respective tags
+    this way, i dont need to be repeating myself in every tag that i enter into the code
+
+    i also mixed the colors around to make it more of my own output
+*/
+body{
+    background-color: #706AA8;
+}
+
+h1{
+    font-size: 35px;
+    color: #E3F59A;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 18px;
+    color: #A6C8F5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#lastp{
+    font-size: 18px;
+    color: #00ff00;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
