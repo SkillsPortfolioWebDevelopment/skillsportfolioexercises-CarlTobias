@@ -1,0 +1,25 @@
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    color: #0e1a40;
+    text-align: center;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    color: #372e29;
+
+    padding: 35px;
+    background-color: #726255;
+}
+
+#img {
+    width: fit-content;
+    margin: auto;
+}
