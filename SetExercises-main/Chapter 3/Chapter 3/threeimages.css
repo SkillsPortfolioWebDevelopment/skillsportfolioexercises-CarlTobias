@@ -1,4 +1,13 @@
+/*in this css file i added some extra things to make it look prettier*/
+
 #head{
+    /*
+        here you have your basics...
+        you have your font-family that determines what font will be displayed
+        you have the font-size where you can modify the size of the text
+        there's also the text-align where you determine where the text will be placed in the page
+        and padding which gives extra space around the text, image, or div
+    */
     font-family: 'Climate Crisis', cursive;
     font-size: 60px;
     text-align: center;
@@ -6,6 +15,10 @@
 }
 
 body{
+    /*
+        here you can also see color, which changes the font color
+        and also the background-color, which of course, changes the background color of (in this case) the body
+    */
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 800;
@@ -17,6 +30,13 @@ body{
 }
 
 img{
+    /*
+        i only added padding for top and bottom, since i diidn't put anything on the sides
+        the width and height is set to auto to make the picture have the same proportions from where i took it from
+        to make it more cutesy, i added border-radius to make the corners of the images rounded
+
+        and in order to line the images up in the center, i used margin and set it to auto
+    */
     padding-top: 10px;
     padding-bottom: 10px;
     width:auto;

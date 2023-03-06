@@ -1,4 +1,7 @@
-div {
+/*in the css file, i didn't change much either...*/
+
+/*i changed the font size for the div, to make it clearer on the page*/
+div{
     display: inline-block;
     font-family: sans-serif;
     font-size: 30px;
@@ -9,28 +12,39 @@ div {
     width: 200px;
     height: 200px;
 }
-  
-body {
+
+body{
     margin: 100px auto;
     width: max-content;
 }
-  
-.A {
+
+/*
+    and for the classes, i added box- and text-shadows
+    the shadow attributes essentially give the items shadows to make it
+
+    there are three values for it, the first two are for the x and y values (respectively) to know where the shadow will go;
+    positive values will go to the right and down, while negative values will go to the left and up
+    the third value is for the fade, if there is no value for this, then it will look solid
+    the inset value positions the shadow inside instead of out
+
+    the box- and text-shadow attributes are basically the same, it's just that one is for a "box" and the other is for text
+*/
+.A{
     border-color: blueviolet;
     box-shadow: 10px 10px 10px;
 }
 
-.B {
+.B{
     border-color: lime;
     box-shadow: 10px 10px  10px inset;
 }
 
-.C {
+.C{
     border-color: darkorange;
     text-shadow: 5px 5px;
 }
 
-.D {
+.D{
     border-color: firebrick;
-    text-shadow: 10px 10px 2px;
+    text-shadow: 10px 10px 3px;
 }
