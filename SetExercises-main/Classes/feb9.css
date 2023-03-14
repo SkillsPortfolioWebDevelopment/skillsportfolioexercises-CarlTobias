@@ -1,0 +1,9 @@
+/*
+    the attributes added here are similr to the internal css,
+    but this is in a .css file instead of inside the .html file itself
+*/
+p{
+    color: rebeccapurple;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
