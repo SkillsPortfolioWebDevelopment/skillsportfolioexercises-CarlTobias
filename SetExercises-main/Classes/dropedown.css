@@ -58,3 +58,8 @@ li.drpdwn{
 .drpdwn:hover .drpdwn-cntnt{
     display: block;
 }
+
+.img{
+    float: left;
+    margin-top: 5px;
+}

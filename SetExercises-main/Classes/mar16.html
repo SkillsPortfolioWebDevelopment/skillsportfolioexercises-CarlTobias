@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="generator" content="Microsoft Visual Studio">
+        <title>Box Shadow</title>
+
+        <style>
+            div{
+                display: inline-block;
+                font-size: 20px;
+                margin: 25px;
+                border:4px solid black;
+                line-height: 100px;
+            }
+
+            body{
+                margin: 100px auto;
+                width:max-content;
+                background-color: cadetblue;
+            }
+
+            div#A{
+                border-color: gold;
+                box-shadow: 5px 5px 5px black;
+            }
+
+            div#B{
+                border-color: pink;
+                box-shadow: 5px 5px 5px black inset;
+            }
+
+            div#C{
+                border-color: green;
+                box-shadow: 5px 5px 1px black;
+            }
+
+            div#D{
+                border-color: cornflowerblue;
+                filter: drop-shadow(5px 5px 1px black);
+            }
+
+            div#E{
+                border-color: plum;
+                filter: grayscale(100%);
+            }
+
+            div#F{
+                border-color: violet;
+                filter: sepia(90%);
+            }
+
+            div#G{
+                border-color: saddlebrown;
+                filter: invert(100%);
+            }
+
+            div#H{
+                border-color: wheat;
+                filter: blur(60%);
+            }
+
+            img{
+                height: 200px;
+                width: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="A"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # A </div>
+        <div id="B"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # B </div>
+        <div id="C"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # C </div>
+        <div id="D"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # D </div>
+        <div id="E"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # E </div>
+        <div id="F"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # F </div>
+        <div id="G"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # G </div>
+        <div id="H"> <img src="https://www.carlogos.org/car-logos/scuderia-ferrari-logo-800x1050.png"> DIV # H </div>
+    </body>
+
+</html>
