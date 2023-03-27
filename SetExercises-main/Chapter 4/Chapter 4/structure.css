@@ -2,7 +2,7 @@ body{
     background-color: #FFFFFF;
 }
 
-#header{
+.h1-1{
     background-color: #17072b;
     width: auto;
     position: absolute;
@@ -43,7 +43,7 @@ li{
 }
 
 
-#mainbody{
+main{
     width: 100%;
     position: absolute;
     top: 187px;
@@ -75,11 +75,12 @@ li{
 #image1{
     height: 355px;
     width: 950px;
-    margin: 20px;
+    position: absolute;
+    top: 218px;
     background-color: #000000;
 }
 
-#sidebody{
+aside{
     background-color: #172d67;
     position: absolute;
     top: 20px;
