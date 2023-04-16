@@ -1,0 +1,52 @@
+/*in the css file, i didn't change much either...*/
+
+/*i changed the font size for the div, to make it clearer on the page*/
+div{
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 25px;
+    border: 4px solid black;
+    line-height: 100px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+body{
+    margin: 100px auto;
+    width: max-content;
+}
+
+/*
+    and for the classes, i added box- and text-shadows, and a drop-shadow filter
+    the shadow attributes essentially give the items shadows to make it
+
+    there are three values for it, the first two are for the x and y values (respectively) to know where the shadow will go;
+    positive values will go to the right and down, while negative values will go to the left and up
+    the third value is for the fade, if there is no value for this, then it will look solid
+    the inset value positions the shadow inside instead of out
+
+    the box- and text-shadow attributes are basically the same, it's just that one is for a "box" and the other is for text
+
+    the filter, on the ther hand, adds effects on the whole image instead of just the text or "box"
+*/
+.A{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+}
+
+.B{
+    border-color: lime;
+    box-shadow: 10px 10px  10px inset;
+}
+
+.C{
+    border-color: darkorange;
+    text-shadow: 5px 5px;
+}
+
+.D{
+    border-color: firebrick;
+    filter: drop-shadow(5px 5px 1px black);
+}

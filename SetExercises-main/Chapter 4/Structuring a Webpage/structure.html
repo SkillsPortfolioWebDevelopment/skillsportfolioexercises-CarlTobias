@@ -1,0 +1,90 @@
+<!--
+    in this exercise, we are tasked to perform a similar action to the wireframe activity,
+    but this time we have to copy the whole page (with text)
+
+    because it's essentially the same as the wireframe exercise,
+    i used the same layout and code with slight differences in the stylesheet
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--inside the head tag, i added the title of the page along with the link connecting its corresponding styleesheet-->
+        <title>Digifest 2022</title>
+        <link rel="stylesheet" href="structure.css">
+    </head>
+
+    <body>
+        <!--
+            and inside the body tag, there are multiple tags used for separating secions
+
+            there's <header>, <nav>, <main>, <article>, <aside>, and <footer>
+        -->
+
+        <header class="h1-1">
+            <!--
+                inside the header is the title text and the navigation bar
+
+                i used this tag multiple times to indicate a new section,
+                they have different sizes and that is why you will see different classes;
+                to separate them and give them variety while still using the same tag
+            -->
+            <br><br>
+            <h1>DIGI FEST 2022</h1>
+            <br>
+            
+            <nav>
+                <!--
+                    inside the <nav> tag, there's a list within an unordered list
+                    the only purpose of that is to make positioning it easier
+                -->
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>What's On</li>
+                    <li>Contact</li>
+                    <li>Tickets</li>
+                </ul>
+            </nav>
+            <br>
+        </header>
+        
+
+        <main>
+            <!--
+                inside the <main> tag, we have the white part of the page
+
+                there's another <header> tag, an <article> tag, an <aside> tag, and some <div> tags
+
+                the <header> tags are under other classes to emphasize the header of that section without overpowering the other headers
+                the <article> tags are under different classes named "paragraph" and "h3-3" to give attributes to the body text for those sections
+                the <aside> tag indicates the blue section on the side of the page
+                the <div> tags are made specifically to substitute the images
+            -->
+            <header class="h3-1">Welcome</header>
+            <article class="paragraph"> Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating 'collaboration', so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p>
+
+            <div id="image1"></div>
+
+            <aside>
+                <header class="h3-2">Line Up</header>
+
+                <article class="h3-3"> - Introduction to HTML and CSS</article>
+                <article class="h3-3"> - Links and Images</article>
+                <article class="h3-3"> - Page Layout</article>
+
+                <div id="image2"></div>
+                <div id="image3"></div>
+            </aside>
+        </main>
+
+        <!--
+            inside the <footer> tag here,
+            there's one <div> tag that has an id called "foot" to give it certain attributes only meant for the footer
+        -->
+        <footer>
+            <div id="foot">© 2022 DigiFest Ltd.</div>
+        </footer>
+    </body>
+</html>

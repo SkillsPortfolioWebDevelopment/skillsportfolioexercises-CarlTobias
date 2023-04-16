@@ -1,0 +1,85 @@
+<!--for this activity, we were asked to make a wireframe copy of an image of a webpage-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--inside the head tag, i put the usual <title> and <link> tags...
+        the page is called "Wireframe" and the html file is connected to its matching css file using the <link> tag-->
+        <title>Wireframe</title>
+        <link rel="stylesheet" href="wireframe.css">
+    </head>
+
+    <body>
+        <!--
+            and inside the body tag, there are multiple tags used for separating secions
+
+            there's <header>, <nav>, <main>, <article>, <aside>, and <footer>
+        -->
+
+        <header class="h1-1">
+            <!--
+                inside the header is the title text and the navigation bar
+
+                i used this tag multiple times to indicate a new section,
+                they have different sizes and that is why you will see different classes;
+                to separate them and give them variety while still using the same tag
+            -->
+            <br><br>
+            <h1>Insert Text Here</h1>
+            <br>
+            
+            <nav>
+                <!--
+                    inside the <nav> tag, there's a list within an unordered list
+                    the only purpose of that is to make positioning it easier
+                -->
+                <ul>
+                    <li>Insert</li>
+                    <li>Text</li>
+                    <li>Insert</li>
+                    <li>Text Here</li>
+                    <li>Insert Text</li>
+                </ul>
+            </nav>
+            <br>
+        </header>
+        
+
+        <main>
+            <!--
+                inside the <main> tag, we have the white part of the page
+
+                there's another <header> tag, an <article> tag, an <aside> tag, and some <div> tags
+
+                the <header> tags are under other classes to emphasize the header of that section without overpowering the other headers
+                the <article> tags are under different classes named "paragraph" and "h3-3" to give attributes to the body text for those sections
+                the <aside> tag indicates the blue section on the side of the page
+                the <div> tags are made specifically to substitute the images
+            -->
+            <header class="h3-1">Invisible</header>
+            <article class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada ipsum nec eros cursus rhoncus. Quisque nec pellentesque quam. Aliquam ac luctus metus. In a turpis et ligula accumsan blandit nec ut ex. Donec elementum turpis odio, vitae accumsan velit vehicula a.</p>
+
+            <div id="image1"></div>
+
+            <aside>
+                <header class="h3-2">Invisible</header>
+
+                <article class="h3-3"> - Insert text here</article>
+                <article class="h3-3"> - Insert text here</article>
+                <article class="h3-3"> - Insert text here</article>
+
+                <div id="image2"></div>
+                <div id="image3"></div>
+            </aside>
+        </main>
+
+        
+        <footer>
+        <!--
+            inside the <footer> tag here,
+            there's one <div> tag that has an id called "foot" to give it certain attributes only meant for the footer
+        -->
+        <div id="foot">Insert text here</div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+p {
+    color: mediumpurple;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.bg {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: black;
+}
+
+#pink {
+    width: 20px;
+    height: 50px;
+    background-color: hotpink;
+    position: relative;
+    top: 150px;
+}
+
+#blue {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 450px;
+
+    animation: blue 2s infinite linear;
+}
+
+@keyframes blue {
+    0% {
+        left: 500px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    10% {
+        top: 100px;
+    }
+
+    20% {
+        top: 80px;
+    }
+
+    30% {
+        top: 75px;
+    }
+
+    40% {
+        top: 75px;
+    }
+
+    50% {
+        top: 75px;
+    }
+
+    70% {
+        top: 80px;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    90% {
+        top: 110px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+.animate {
+    animation: jump 0.3s linear;
+}

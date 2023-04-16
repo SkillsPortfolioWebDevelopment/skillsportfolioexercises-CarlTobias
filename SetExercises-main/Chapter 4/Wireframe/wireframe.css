@@ -1,0 +1,201 @@
+body{
+    /*
+        inside the body i made the background white to copy the middle area of the page
+        and added "user-select" to make it so that no one will be able to see the actual texts i added in the code but covered up
+    */
+    background-color: #FFFFFF;
+    user-select: none;
+}
+
+.h1-1{
+    /*
+        here we have the purple section of the page
+        the attributes here are to position the purple rectangle at the top and from side-to-side
+    */
+    background-color: #17072b;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+h1{
+    /*
+        in here, we have the codes that set the space for the text
+    */
+    background-color: #FFFDFF;
+    color: #FFFDFF;
+    font-size: 60px;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    /*
+        this one is similar to the h1 attributes, but its more focused on the space below that (the nav bar)
+    */
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #FFFDFF;
+    color: #FFFDFF;
+    font-size: 36px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+li{
+    /*
+        and this block just helps in positioning the contents of the unordered list into a horizontal layout
+    */
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    display: inline-block;
+}
+
+
+main{
+    /*
+        the one here positions the white area of the page in the right spot
+        and adding "position: absolute" makes it so that no elements can disturb it
+    */
+    width: 100%;
+    position: absolute;
+    top: 187px;
+    left: 0;
+}
+
+.h3-1{
+    /*
+        this one, just like the other header classes, it fixes the text for its corresponding tag
+    */
+    background-color: #000000;
+    color: #000000;
+    font-size: 40px;
+    width: fit-content;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.paragraph{
+    /*
+        for this one, it configures the the body text for the main section
+    */
+    background-color: #000000;
+    color: #000000;
+    font-size: 24px;
+    width:  950px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#image1{
+    /*
+        here makes space for the image inside the main section
+    */
+    height: 355px;
+    width: 950px;
+    position: absolute;
+    top: 218px;
+    background-color: #000000;
+}
+
+aside{
+    /*
+        the area that this covers is the blue colored section on the right side of the page;
+        again, i used "position: absolute" to make sure no other codes can move it unless it is inside this block
+    */
+    background-color: #172d67;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 480px;
+    height: 552px;
+}
+
+.h3-2{
+    /*
+        again, just like the other header classes, it fixes the text for its corresponding tag
+    */
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-size: 40px;
+    width: fit-content;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.h3-3{
+    /*
+        same thing goes for this section here
+    */
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-size: 26px;
+    width: fit-content;
+    margin: 20px;
+}
+
+#image2{
+    /*
+        same as #image1, it gives space for the image, but this time it is for the "aside" section
+    */
+    height: 215px;
+    width: 215px;
+    background-color: #000000;
+    position: absolute;
+    top: 310px;
+    left: 20px;
+}
+
+#image3{
+    /*
+        and this one here is another "image" next to #image2
+    */
+    height: 215px;
+    width: 215px;
+    background-color: #000000;
+    position:absolute;
+    top: 310px;
+    right: 20px;
+}
+
+footer{
+    /*
+        the section here fixes the area under the footer tag
+    */
+    background-color: #8c15e9;
+    height: 33px;
+    margin-top: 583px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    
+}
+
+#foot{
+    /*
+        and this here configures the text inside the footer section
+    */
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 20px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 7px;
+    left: 45%;
+}

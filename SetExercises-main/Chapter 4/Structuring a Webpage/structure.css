@@ -1,0 +1,159 @@
+/*
+    now this stylesheet has the exact same contents as the wireframe.css file,
+    but i removed the "background-color:" attribute to show the text;
+    and fixed the fonts to make it look as similar as i can make it
+*/
+
+body{
+    background-color: #FFFFFF;
+    user-select: none;
+}
+
+.h1-1{
+    background-color: #17072b;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+h1{
+    color: #FFFDFF;
+    font-family: Tahoma;
+    font-size: 60px;
+    text-decoration: underline;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    color: #FFFDFF;
+    font-family: Arial;
+    font-size: 36px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+li{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    display: inline-block;
+}
+
+
+main{
+    width: 100%;
+    position: absolute;
+    top: 187px;
+    left: 0;
+}
+
+.h3-1{
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 40px;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.paragraph{
+    color: #000000;
+    font-family: Arial;
+    font-size: 24px;
+    width:  950px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#image1{
+    height: 355px;
+    width: 950px;
+    position: absolute;
+    top: 218px;
+    background-color: #000000;
+}
+
+aside{
+    background-color: #172d67;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 480px;
+    height: 552px;
+
+}
+
+.h3-2{
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 40px;
+    text-decoration: underline;
+    width: fit-content;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.h3-3{
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 26px;
+    width: fit-content;
+    margin: 20px;
+}
+
+#image2{
+    height: 215px;
+    width: 215px;
+    background-color: #000000;
+    position: absolute;
+    top: 310px;
+    left: 20px;
+}
+
+#image3{
+    height: 215px;
+    width: 215px;
+    background-color: #000000;
+    position:absolute;
+    top: 310px;
+    right: 20px;
+}
+
+footer{
+    background-color: #8c15e9;
+    height: 33px;
+    margin-top: 583px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    
+}
+
+#foot{
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 20px;
+    height: 20px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 7px;
+    left: 45%;
+}
