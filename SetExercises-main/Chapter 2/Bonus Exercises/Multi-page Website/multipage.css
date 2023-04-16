@@ -6,7 +6,18 @@ h1{
     text-align: center;
 }
 
-#headers{
+#titleinnav{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0e1a40;
+
+    position: absolute;
+    top: 37px;
+    left: 35px;
+}
+
+.headers{
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     font-weight: lighter;
@@ -16,7 +27,7 @@ h1{
     padding-bottom: 10px;
 }
 
-#titles{
+.titles{
     font-family: 'Gloock', serif;
     font-size: 20px;
     font-weight: bold;
@@ -37,7 +48,7 @@ body{
     background-color: #726255;
 }
 
-#qckfnd{
+.qckfnd{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -54,12 +65,67 @@ body{
     margin: auto;
 }
 
+.topbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3333;
+    top: 0;
+}
+
+li{
+    width: auto;
+    float: right;
+    top: 0;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 19px 23px;
+    text-decoration: none;
+}
+
+    li:hover{
+        background-color: #740001;
+    }
+
+li.drop{
+    display: inline-block;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    background-color: #3333;
+    min-height: 90px;
+    z-index: 1000;
+}
+
+.content a{
+    color: white;
+    background-color: #3333;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.content a:hover{
+    background-color: #EEB939;
+}
+
+.drop:hover .content{
+    display: block;
+}
+
 .search{
     text-align: justify;
     padding: 0.5rem;
 }
 
-#casthead{
+.casthead{
     font-weight: bold;
     color: #1a472a;
 
@@ -67,7 +133,7 @@ body{
 }
 
 /*the id here is used for an extra page*/
-#intro{
+.intro{
     /*these properties work together to make the id into the canter of the screen*/
     width: 100%;
     margin: auto;

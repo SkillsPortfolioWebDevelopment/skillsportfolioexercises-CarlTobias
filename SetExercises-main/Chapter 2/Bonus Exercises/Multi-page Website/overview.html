@@ -18,22 +18,57 @@
     </head>
 
     <body>
-        <h1>The Wizarding World</h1>
-        
-        <!--
-            now here, you'll notice that the overview link is gone, and that is because since the user is already on that page,
-            i made it so that it will not show that specific tag on-screen to reduce any redundancies;
+        <ul class="topbar">
+            <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
+    
+            <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
 
-            (check plot.html for the next part)
-        -->
-        <div class="nav">
-            <a id="qckfnd">Nav Bar:</a> <a href="Multi-pageWebsite.html">Home</a> | <a href="plot.html">Plot</a> | <a href="castandcharacters.html">Cast and Characters</a> | <a href="reviews.html">Movie Reviews</a> | <a href="references.html">References</a>
-        </div>
+            <li><a href="plot.html" class="drop">Plot</a>
+                <div class="content">
+                    <a href="#BookOne">Book One</a>
+                    <a href="#BookTwo">Book Two</a>
+                    <a href="#BookThree">Book Three</a>
+                    <a href="#BookFour">Book Four</a>
+                    <a href="#BookFive">Book Five</a>
+                    <a href="#BookSix">Book Six</a>
+                    <a href="#BookSeven">Book Seven</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="castandcharacters.html" class="drop">Cast and Characters</a>
+
+                <div class="content">
+                    <a href="#students">Students</a>
+                    <a href="#professors">Professors</a>
+                    <a href="#ootp">Order of the Pheonix</a>
+                    <a href="#deatheaters">Death Eaters</a>
+                    <a href="#etc">Others</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="reviews.html" class="drop">Movie Reviews</a>
+
+                <div class="content">
+                    <a href="#Movie1">Movie 1</a>
+                    <a href="#Movie2">Movie 2</a>
+                    <a href="#Movie3">Movie 3</a>
+                    <a href="#Movie4">Movie 4</a>
+                    <a href="#Movie5">Movie 5</a>
+                    <a href="#Movie6">Movie 6</a>
+                    <a href="#Movie7">Movie 7</a>
+                    <a href="#Movie8">Movie 8</a>
+                </div>
+            </li>
+
+            <li><a href="references.html">References</a></li>
+        </ul>
 
         <p>
             <br>
             <p>
-                <div id="headers">Overview</div>
+                <div class="headers">Overview</div>
 
                 The first book introduces readers to Harry Potter, an 11 year old boy that lives in the world of non-magical beings, 
                 or Muggles as they are called. On his 11th birthday he is visited by the half-giant Rubeus Hagrid and is introduced to the 

@@ -1,8 +1,15 @@
+/*
+    as you can see here, the attributes found in the internal css code,
+    was just transferred here into its respective tags and id
+*/
+
 body{
+    /*i added a background color to make it a little bit more easier on the eyes*/
     background-color: #eeeeee;
 }
 
 h1{
+    /*here we have the header attributes*/
     font-size: 35px;
     color: #ff0000;
     text-align: center;
@@ -11,12 +18,14 @@ h1{
 }
 
 p{
+    /*these are the ones repeated in each paragraph tag (which was compacted into one)*/
     font-size: 18px;
     color: #111111;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #green{
+    /*and this is the id for the section of the paragraph that's different*/
     font-size: 18px;
     color: #00ff00;
     font-weight: 700;

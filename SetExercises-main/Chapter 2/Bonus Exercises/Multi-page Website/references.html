@@ -13,20 +13,62 @@
     </head>
     
     <body>
-        <h1>The Wizarding World</h1>
-        
-        <p class="nav">
-            <a id="qckfnd">Nav Bar:</a> <a href="Multi-pageWebsite.html">Home</a> | <a href="overview.html">Overview</a> | <a href="plot.html">Plot</a> | <a href="castandcharacters.html">Cast and Characters</a>
-        </p>
-        <div id="headers">References</div>
+        <ul class="topbar">
+            <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
+    
+            <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
+
+            <li><a href="plot.html" class="drop">Plot</a>
+                <div class="content">
+                    <a href="#BookOne">Book One</a>
+                    <a href="#BookTwo">Book Two</a>
+                    <a href="#BookThree">Book Three</a>
+                    <a href="#BookFour">Book Four</a>
+                    <a href="#BookFive">Book Five</a>
+                    <a href="#BookSix">Book Six</a>
+                    <a href="#BookSeven">Book Seven</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="castandcharacters.html" class="drop">Cast and Characters</a>
+
+                <div class="content">
+                    <a href="#students">Students</a>
+                    <a href="#professors">Professors</a>
+                    <a href="#ootp">Order of the Pheonix</a>
+                    <a href="#deatheaters">Death Eaters</a>
+                    <a href="#etc">Others</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="reviews.html" class="drop">Movie Reviews</a>
+
+                <div class="content">
+                    <a href="#Movie1">Movie 1</a>
+                    <a href="#Movie2">Movie 2</a>
+                    <a href="#Movie3">Movie 3</a>
+                    <a href="#Movie4">Movie 4</a>
+                    <a href="#Movie5">Movie 5</a>
+                    <a href="#Movie6">Movie 6</a>
+                    <a href="#Movie7">Movie 7</a>
+                    <a href="#Movie8">Movie 8</a>
+                </div>
+            </li>
+
+            <li><a href="references.html">References</a></li>
+        </ul>
+
+        <div class="headers">References</div>
         
         <!--
             and finally, i added the links of all the websites i used the information of fo the website i made to avoid plaigarism
             and inside the anchor <a> tags, i used the target attribute to make the links open in different tabs for ease for the user
         -->
-        <a id="casthead">Overview Descriptions:</a> <a href="https://www.teach-nology.com/teachers/child_lit/harry_potter/" target="_blank">www.teach-nology.com</a> <br>
-        <a id="casthead">Plot Descriptions:</a> <a href="https://stories.jkrowling.com/en-us/harrypotter/the-harry-potter-stories/" target="_blank">stories.jkrowling.com</a> <br>
-        <a id="casthead">Cast and Character List:</a> <a href="https://harrypotter.fandom.com/wiki/List_of_Harry_Potter_cast_members" target="_blank">harrypotter.fandom.com</a> <br>
-        <a id="casthead">Movie Reviews:</a> <a href="https://www.rottentomatoes.com/search?search=harry%20potter" target="_blank">www.rottentomatoes.com</a>
+        <a class="casthead">Overview Descriptions:</a> <a href="https://www.teach-nology.com/teachers/child_lit/harry_potter/" target="_blank">www.teach-nology.com</a> <br>
+        <a class="casthead">Plot Descriptions:</a> <a href="https://stories.jkrowling.com/en-us/harrypotter/the-harry-potter-stories/" target="_blank">stories.jkrowling.com</a> <br>
+        <a class="casthead">Cast and Character List:</a> <a href="https://harrypotter.fandom.com/wiki/List_of_Harry_Potter_cast_members" target="_blank">harrypotter.fandom.com</a> <br>
+        <a class="casthead">Movie Reviews:</a> <a href="https://www.rottentomatoes.com/search?search=harry%20potter" target="_blank">www.rottentomatoes.com</a>
     </body>
 </html>

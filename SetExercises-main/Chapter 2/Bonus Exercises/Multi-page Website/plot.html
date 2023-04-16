@@ -14,15 +14,55 @@
     </head>
 
     <body>
-        <h1>The Wizarding World</h1>
-        
-        <div class="nav">
-            <a id="qckfnd">Nav Bar:</a> <a href="Multi-pageWebsite.html">Home</a> | <a href="overview.html">Overview</a> | <a href="castandcharacters.html">Cast and Characters</a> | <a href="reviews.html">Movie Reviews</a> | <a href="references.html">References</a>
-        </div>
+        <ul class="topbar">
+            <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
+    
+            <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
 
+            <li><a href="plot.html" class="drop">Plot</a>
+                <div class="content">
+                    <a href="#BookOne">Book One</a>
+                    <a href="#BookTwo">Book Two</a>
+                    <a href="#BookThree">Book Three</a>
+                    <a href="#BookFour">Book Four</a>
+                    <a href="#BookFive">Book Five</a>
+                    <a href="#BookSix">Book Six</a>
+                    <a href="#BookSeven">Book Seven</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="castandcharacters.html" class="drop">Cast and Characters</a>
+
+                <div class="content">
+                    <a href="#students">Students</a>
+                    <a href="#professors">Professors</a>
+                    <a href="#ootp">Order of the Pheonix</a>
+                    <a href="#deatheaters">Death Eaters</a>
+                    <a href="#etc">Others</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="reviews.html" class="drop">Movie Reviews</a>
+
+                <div class="content">
+                    <a href="#Movie1">Movie 1</a>
+                    <a href="#Movie2">Movie 2</a>
+                    <a href="#Movie3">Movie 3</a>
+                    <a href="#Movie4">Movie 4</a>
+                    <a href="#Movie5">Movie 5</a>
+                    <a href="#Movie6">Movie 6</a>
+                    <a href="#Movie7">Movie 7</a>
+                    <a href="#Movie8">Movie 8</a>
+                </div>
+            </li>
+
+            <li><a href="references.html">References</a></li>
+        </ul>
 
         <p>
-            <div id="headers">Plot</div>
+            <div class="headers">Plot</div>
             
             <!--
                 in here, i have a second nav bar to help the user find the specific part of the page they want to read
@@ -33,7 +73,7 @@
             </div>
 
             <ul id="BookOne">
-                <div id="titles">Book One: The Sorcerer's Stone</div>
+                <div class="titles">Book One: The Sorcerer's Stone</div>
 
                 When mysterious letters start arriving on his doorstep, Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry.
                 <br><br>
@@ -49,7 +89,7 @@
             </ul>
 
             <ul id="BookTwo">
-                <div id="titles">Book Two: The Chamber of Secrets</div>
+                <div class="titles">Book Two: The Chamber of Secrets</div>
 
                 Throughout the summer holidays after his first year at Hogwarts School of Witchcraft and Wizardry, Harry Potter has been 
                 receiving sinister warnings from a house-elf called Dobby.
@@ -66,7 +106,7 @@
             </ul>
 
             <ul id="BookThree">
-                <div id="titles">Book Three: The Prisoner of Azkaban</div>
+                <div class="titles">Book Three: The Prisoner of Azkaban</div>
 
                 For Harry Potter, it's the start of another far-from-ordinary year at Hogwarts when the Knight Bus crashes through the 
                 darkness and comes to an abrupt halt in front of him.
@@ -85,7 +125,7 @@
             </ul>
 
             <ul id="BookFour">
-                <div id="titles">Book Four: The Goblet of Fire</div>
+                <div class="titles">Book Four: The Goblet of Fire</div>
 
                 The rules of the Triwizard Tournament, which is about to take place at Hogwarts, only allow wizards over the age of seventeen 
                 to enter.
@@ -105,7 +145,7 @@
             </ul>
 
             <ul id="BookFive">
-                <div id="titles">Book Five: The Order of the Phoenix</div>
+                <div class="titles">Book Five: The Order of the Phoenix</div>
 
                 After the Dementors' attack on his cousin Dudley, Harry knows he is about to become Voldemort's next target.
                 <br><br>
@@ -122,7 +162,7 @@
             </ul>
 
             <ul id="BookSix">
-                <div id="titles">Book Six: The Half-Blood Prince</div>
+                <div class="titles">Book Six: The Half-Blood Prince</div>
 
                 One summer night, when Dumbledore arrives at Privet Drive to collect Harry Potter, his wand hand is blackened and shrivelled, 
                 but he will not reveal why.
@@ -139,7 +179,7 @@
             </ul>
 
             <ul id="BookSeven">
-                <div id="titles">Book Seven: The Deathly Hallows</div>
+                <div class="titles">Book Seven: The Deathly Hallows</div>
 
                 Harry Potter is leaving Privet Drive for the last time. But as he climbs into the sidecar of Hagrid's motorbike and they take 
                 to the skies, he knows Lord Voldemort and the Death Eaters will not be far behind.

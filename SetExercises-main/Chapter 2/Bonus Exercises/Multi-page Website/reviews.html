@@ -14,101 +14,144 @@
     </head>
 
     <body>
-        <h1>The Wizarding World</h1>
-        
-        <p class="nav">
-            <a id="qckfnd">Nav Bar:</a> <a href="Multi-pageWebsite.html">Home</a> | <a href="overview.html">Overview</a> | <a href="plot.html">Plot</a> | <a href="castandcharacters.html">Cast and Characters</a> | <a href="references.html">References</a>
-        </p>
+        <ul class="topbar">
+            <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
+    
+            <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
+
+            <li><a href="plot.html" class="drop">Plot</a>
+                <div class="content">
+                    <a href="#BookOne">Book One</a>
+                    <a href="#BookTwo">Book Two</a>
+                    <a href="#BookThree">Book Three</a>
+                    <a href="#BookFour">Book Four</a>
+                    <a href="#BookFive">Book Five</a>
+                    <a href="#BookSix">Book Six</a>
+                    <a href="#BookSeven">Book Seven</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="castandcharacters.html" class="drop">Cast and Characters</a>
+
+                <div class="content">
+                    <a href="#students">Students</a>
+                    <a href="#professors">Professors</a>
+                    <a href="#ootp">Order of the Pheonix</a>
+                    <a href="#deatheaters">Death Eaters</a>
+                    <a href="#etc">Others</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="reviews.html" class="drop">Movie Reviews</a>
+
+                <div class="content">
+                    <a href="#Movie1">Movie 1</a>
+                    <a href="#Movie2">Movie 2</a>
+                    <a href="#Movie3">Movie 3</a>
+                    <a href="#Movie4">Movie 4</a>
+                    <a href="#Movie5">Movie 5</a>
+                    <a href="#Movie6">Movie 6</a>
+                    <a href="#Movie7">Movie 7</a>
+                    <a href="#Movie8">Movie 8</a>
+                </div>
+            </li>
+
+            <li><a href="references.html">References</a></li>
+        </ul>
 
         <p>
+            <!--
+                in here, i inputted the reviews of the movies (from rotten tomatoes)
+                
+                and it pretty much has the same tags repeeated throughout the bonus exercise
+            -->
             <br><br>
             
-            <ul id="reviews">
+            <div class="headers">Movie Reviews</div>
 
-                <div id="headers">Movie Reviews</div>
+            The ratings for the movies are based on results from <a href="https://www.rottentomatoes.com/search?search=harry%20potter">Rotten Tomatoes</a>.
+            <br><br>
 
-                The ratings for the movies are based on results from <a href="https://www.rottentomatoes.com/search?search=harry%20potter">Rotten Tomatoes</a>.
-                <br><br>
-
-                <div id="titles">Harry Potter and the Sorcerer's Stone</div>
-                <strong>Tomatometer:</strong> 81%
-                <strong>Audience Score:</strong> 82%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                Harry Potter and the Sorcerer's Stone adapts its source material faithfully while condensing the novel's overstuffed narrative 
-                into an involving -- and often downright exciting -- big-screen magical caper.
-                <br><br>
+            <div class="titles" id="Movie1">Harry Potter and the Sorcerer's Stone</div>
+            <strong>Tomatometer:</strong> 81%
+            <strong>Audience Score:</strong> 82%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            Harry Potter and the Sorcerer's Stone adapts its source material faithfully while condensing the novel's overstuffed narrative 
+            into an involving -- and often downright exciting -- big-screen magical caper.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Chamber of Secrets</div>
-                <strong>Tomatometer:</strong> 82%
-                <strong>Audience Score:</strong> 80%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                Though perhaps more enchanting for younger audiences, Chamber of Secrets is nevertheless both darker and livelier than its 
-                predecessor, expanding and improving upon the first film's universe.
-                <br><br>
+            <div class="titles" id="Movie2">Harry Potter and the Chamber of Secrets</div>
+            <strong>Tomatometer:</strong> 82%
+            <strong>Audience Score:</strong> 80%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            Though perhaps more enchanting for younger audiences, Chamber of Secrets is nevertheless both darker and livelier than its 
+            predecessor, expanding and improving upon the first film's universe.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Prisoner of Azkaban</div>
-                <strong>Tomatometer:</strong> 90%
-                <strong>Audience Score:</strong> 86%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                Under the assured direction of Alfonso Cuaron, Harry Potter and the Prisoner of Azkaban triumphantly strikes a delicate balance 
-                between technical wizardry and complex storytelling.
-                <br><br>
+            <div class="titles" id="Movie3">Harry Potter and the Prisoner of Azkaban</div>
+            <strong>Tomatometer:</strong> 90%
+            <strong>Audience Score:</strong> 86%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            Under the assured direction of Alfonso Cuaron, Harry Potter and the Prisoner of Azkaban triumphantly strikes a delicate balance 
+            between technical wizardry and complex storytelling.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Goblet of Fire</div>
-                <strong>Tomatometer:</strong> 88%
-                <strong>Audience Score:</strong> 74%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                The main characters are maturing, and the filmmakers are likewise improving on their craft; vibrant special effects and assured 
-                performances add up to what is the most complex yet of the Harry Potter films.
-                <br><br>
+            <div class="titles" id="Movie4">Harry Potter and the Goblet of Fire</div>
+            <strong>Tomatometer:</strong> 88%
+            <strong>Audience Score:</strong> 74%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            The main characters are maturing, and the filmmakers are likewise improving on their craft; vibrant special effects and assured 
+            performances add up to what is the most complex yet of the Harry Potter films.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Order of the Phoenix</div>
-                <strong>Tomatometer:</strong> 78%
-                <strong>Audience Score:</strong> 81%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                It's not easy to take the longest Harry Potter book and streamline it into the shortest HP movie, but director David Yates does a 
-                bang up job of it, creating an Order of the Phoenix that's entertaining and action-packed.
-                <br><br>
+            <div class="titles" id="Movie5">Harry Potter and the Order of the Phoenix</div>
+            <strong>Tomatometer:</strong> 78%
+            <strong>Audience Score:</strong> 81%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            It's not easy to take the longest Harry Potter book and streamline it into the shortest HP movie, but director David Yates does a 
+            bang up job of it, creating an Order of the Phoenix that's entertaining and action-packed.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Half-Blood Prince</div>
-                <strong>Tomatometer:</strong> 84%
-                <strong>Audience Score:</strong> 78%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                Dark, thrilling, and occasionally quite funny, Harry Potter and the Half-Blood Prince is also visually stunning and emotionally 
-                satisfying.
-                <br><br>
+            <div class="titles" id="Movie6">Harry Potter and the Half-Blood Prince</div>
+            <strong>Tomatometer:</strong> 84%
+            <strong>Audience Score:</strong> 78%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            Dark, thrilling, and occasionally quite funny, Harry Potter and the Half-Blood Prince is also visually stunning and emotionally 
+            satisfying.
+            <br><br>
 
 
-                <div id="titles">Harry Potter and the Deathly Hallows: Part 1</div>
-                <strong>Tomatometer:</strong> 77%
-                <strong>Audience Score:</strong> 85%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                It can't help but feel like the prelude it is, but Deathly Hallows: Part I is a beautifully filmed, emotionally satisfying 
-                penultimate installment for the Harry Potter series.
-                <br><br>
+            <div class="titles" id="Movie7">Harry Potter and the Deathly Hallows: Part 1</div>
+            <strong>Tomatometer:</strong> 77%
+            <strong>Audience Score:</strong> 85%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            It can't help but feel like the prelude it is, but Deathly Hallows: Part I is a beautifully filmed, emotionally satisfying 
+            penultimate installment for the Harry Potter series.
+            <br><br>
 
                 
-                <div id="titles">Harry Potter and the Deathly Hallows: Part 2</div>
-                <strong>Tomatometer:</strong> 96%
-                <strong>Audience Score:</strong> 89%
-                <br><br>
-                <strong>Critics Consensus:</strong><br>
-                Thrilling, powerfully acted, and visually dazzling, Deathly Hallows Part II brings the Harry Potter franchise to a 
-                satisfying -- and suitably magical -- conclusion.
-                <br><br>
-            </ul>
+            <div class="titles" id="Movie8">Harry Potter and the Deathly Hallows: Part 2</div>
+            <strong>Tomatometer:</strong> 96%
+            <strong>Audience Score:</strong> 89%
+            <br><br>
+            <strong>Critics Consensus:</strong><br>
+            Thrilling, powerfully acted, and visually dazzling, Deathly Hallows Part II brings the Harry Potter franchise to a 
+            satisfying -- and suitably magical -- conclusion.
+            <br><br>
         </p>
     </body>
 </html>

@@ -14,11 +14,52 @@
     </head>
 
     <body>
-        <h1>The Wizarding World</h1>
-        
-        <div class="nav">
-            <a id="qckfnd">Nav Bar:</a> <a href="Multi-pageWebsite.html">Home</a> | <a href="overview.html">Overview</a> | <a href="plot.html">Plot</a> | <a href="reviews.html">Movie Reviews</a> | <a href="references.html">References</a>
-        </div>
+        <ul class="topbar">
+            <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
+    
+            <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
+
+            <li><a href="plot.html" class="drop">Plot</a>
+                <div class="content">
+                    <a href="#BookOne">Book One</a>
+                    <a href="#BookTwo">Book Two</a>
+                    <a href="#BookThree">Book Three</a>
+                    <a href="#BookFour">Book Four</a>
+                    <a href="#BookFive">Book Five</a>
+                    <a href="#BookSix">Book Six</a>
+                    <a href="#BookSeven">Book Seven</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="castandcharacters.html" class="drop">Cast and Characters</a>
+
+                <div class="content">
+                    <a href="#students">Students</a>
+                    <a href="#professors">Professors</a>
+                    <a href="#ootp">Order of the Pheonix</a>
+                    <a href="#deatheaters">Death Eaters</a>
+                    <a href="#etc">Others</a>
+                </div>
+            </li>
+
+            <li class="drop">
+                <a href="reviews.html" class="drop">Movie Reviews</a>
+
+                <div class="content">
+                    <a href="#Movie1">Movie 1</a>
+                    <a href="#Movie2">Movie 2</a>
+                    <a href="#Movie3">Movie 3</a>
+                    <a href="#Movie4">Movie 4</a>
+                    <a href="#Movie5">Movie 5</a>
+                    <a href="#Movie6">Movie 6</a>
+                    <a href="#Movie7">Movie 7</a>
+                    <a href="#Movie8">Movie 8</a>
+                </div>
+            </li>
+
+            <li><a href="references.html">References</a></li>
+        </ul>
 
         <p>
             <div id="headers">Cast and Characters</div>
@@ -29,7 +70,7 @@
                 (see reviews.html for the next part)
             -->
             <div class="search">
-                <a id="qckfnd">Quick Find:</a> <a href="#students">Students</a> | <a href="#professors">Professors</a> | <a href="#ootp">Members of the Order of the Phoenix</a> | <a href="#deatheaters">Death Eaters</a> | <a href="#others">Muggles, Ghosts, and Elves</a>
+                <a id="qckfnd">Quick Find:</a> <a href="#students">Students</a> | <a href="#professors">Professors</a> | <a href="#ootp">Members of the Order of the Phoenix</a> | <a href="#deatheaters">Death Eaters</a> | <a href="#etc">Muggles, Ghosts, and Elves</a>
             </div>
             
             <div>
@@ -45,9 +86,8 @@
                 <br><br>
             </div>
                 
-            <div>
-
-                <a id="casthead">Students:</a>
+            <div id="students">
+                <a class="casthead">Students:</a>
                 <br>
                 Bill Weasley - Richard Fish <br>
                 Blaise Zabini - Louis Cordice <br>
@@ -66,12 +106,10 @@
                 Hermoine Granger - Emma Watson <br>
                 Luna Lovegood - Evanna Lynch <br>
                 <br><br><br>
-                    
             </div>
 
-            <div>
-
-                <a id="casthead">Professors:</a>
+            <div id="professors">
+                <a class="casthead">Professors:</a>
                 <br>
                 Amycus Carrow - Ralph Ineson <br>
                 Alastor Moody - Brendan Gleeson <br>
@@ -87,12 +125,10 @@
                     
                 Dolores Umbridge - Imelda Staunton <br>
                 <br><br><br>
-
             </div>
                     
-            <div>
-
-                <a id="casthead">Order of the Phoenix Members:</a>
+            <div id="ootp">
+                <a class="casthead">Order of the Phoenix Members:</a>
                 <br>
                 Aberforth Dumbledore - Jim McManus, Ciaran Hinds <br>
                 Arthur Weasley - Mark Williams <br>
@@ -116,12 +152,10 @@
                 Mrs. Molly Weasely - Julie Walters <br>
                 Nymphadora Tonks - Natalia Tena <br>
                 <br><br><br>
-                
             </div>
                     
-            <div>
-
-                <a id="casthead">Death Eaters:</a>
+            <div id="deatheaters">
+                <a class="casthead">Death Eaters:</a>
                 <br>
                 Lord Voldemort - Ralph Fiennes <br><br>
 
@@ -132,12 +166,10 @@
                 Peter Pettigrew (Wormtail) - Timothy Spall <br>                  
                 Bellatrix Lestrange - Helena Bonham Carter <br>
                 <br><br><br>
-
             </div>
 
-            <div>
-
-                <a id="casthead">Muggles, Ghosts, and Elves:</a>
+            <div id="etc">
+                <a class="casthead">Muggles, Ghosts, and Elves:</a>
                 <br>
                 Dudley Dursley - Harry Melling <br>
                 Vernon Dursley - Richard Griffiths <br>
@@ -152,7 +184,6 @@
                 Dobby - Toby Jones <br>
                 Kreacher - Timothy Bateson, Simon McBurney <br>
                 Winky - (did not appear in the movies)
-
             </div>
         </p>
     </body>
