@@ -1,102 +1,351 @@
-<!--
-    Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far
-    (and a few extras) with a description of how to use them and code examples.
+<!--for the bonus exercise, i used the usual layout that is used-->
 
-    - Use an external stylesheet.
-    - Be creative with your styling, but keep it professional.
-    - Use the <code> and <pre> HTML tags to include code examples.
-    - Include a minimum of 10 HTML tags.
-    - Include a minimum of 8 CSS properties.
-    - Include a variety of different headers.
-    - Make sure the code is indented and spaced properly.
--->
-
-<!--
-    alright, so in this bonus exercises, i used the tags i learned plus a couple more
-    so to save time and energy, i will only be explaining the new ones i haven't used in previous activities
--->
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
     <head>
-        <title>Random Tingz</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>A Beginner's Guide to HTML and CSS</title>
         <link rel="stylesheet" href="bonusexercise.css">
     </head>
 
     <body>
-        <h1>Welcome to Random Tingz</h1>
-        <h3>By Carl Tobias</h3>
 
         <!--
-            inside the <h2> tag, i used a tag called "class"
-            this allows us to make a variety of custom styles for the same tag (in this case <h2>)
-            which means that the text inside this tag will be a little different from the same tags with different classes
-            besides that, it's also used as a way to organize the code to make it more understandable
-
-            and the margin command is used to position the border element to my liking
-            (i added it here and not in the css because i didn't wat to mess up the positioning for the others)
+            inside the body, i used a variety of tags (<h1>-<h3>, <div>, <p>, <pre>, and <code>)
+            
+            <h1>-<h3> is a variety of different headers (modified to look nicer in CSS)
+            <div> separates certain elements togeher for organization and style
+            <p> is a place to input any text elements
+            <pre> allows the any text to show up as its inputted in the source-code editor
+            <code> defines pieces of computer code  
         -->
-        <h2 class="lol">Shower Thoughts</h2>
-        <!--
-            the <pre> tag used here defines a preformatted text
-            this allows the user to add as many white and tab spaces and the text will be printed as is, unlike with the paragraph (<p>) tag\
-            so what you see here, will be what is printed on the page
-        -->
-        <pre>
-            <strong>1. </strong>Someone's mom is currently using you as either a good or bad example for her kids.
-            <strong>2. </strong>Birthday presents are your rewards for not dying that year.
-            <strong>3. </strong>Why are prisoners given food and water, but the homeless aren't?
-            <strong>4. </strong>There's no way to prove that we all see the same colours.
-            <strong>5. </strong>The amount of people older than you never increases.
-            <strong>6. </strong>Your belly button used to be your mouth.
-            <strong>7. </strong>How does your tongue know how something will feel when you look at it?
-            <strong>8. </strong>If you work at a farm and you take care of chickens, then that makes you a "chicken tneder."
-            <strong>9. </strong>The skeleton isn't inside you, you're the brain, so you're the one inside the skeleton.
-            <strong>10. </strong>My debit card pays for things with past hours of my life, while my credit card pays with the future hours of my life.
-        </pre>
-        
-        <h2 class="lol">UnSyStEmAtIc ThInKiNgS</h2>
-        <p class="thinKINGS">
-            I will randomly add a value to x that will equal to 69:<br>
-            <!--
-                the <code> tag defines certain pieces of code
-                it will also be printing the text in the default monospace font
-            -->
-            <code>x = 69</code><br>
 
-            <br>Voila! Fin.<br>
+        <h1>A Beginner's Guide to HTML and CSS</h1>
 
-            <br>Now, press this <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">text</a> for a surprise.<br>
-            <br>Did you see it?<br>
-            <strong>Did <em>you</em>??</strong><br>
-            <strong>Click it <em>broo</em>!!</strong><br>
-            <strong>DO IT!!!!</strong>
-        </p>
+        <div>
+            <h2>Basic HTML Tags</h2>
 
-        
-        <h2 class="lol">-Top 3 Hottest Men-</h2>
-    
-        <p class="hotness">
-            This list composes of the top three men who I think are the most attractive in the world. Not everyone may agree, but what do I care, this ain't your list. <strong><em>Bye Felicia</em>.</strong><br>
-            <br><br>P.S. The outcome of this list does not reflect on the opinions of other people.<br><br>
+            <div>
+                <!--
+                    as you can see here, i enclosed this whole section as a div to be separated with the "css attributes" area
+
+                    inside, i also used different tags (explained earlier) as i saw fit for the situation
+                -->
+                <h3>Initial Tags</h3>
+                <p>
+                    When coding with HTML, one must use two main containers.
+                    <br><br>
                     
-            <br><strong>1.</strong> Chris Hemsworth<br>
-            <!--
-                in here, i used img src which adds an image inside of the page,
-                it will use a link from the web or a local computer, and prints it
-            -->
-            <br><img class="img-chris" src="https://i.mdel.net/i/db/2019/5/1125546/1125546-500w.jpg" alt="Chris Hemsworth">
-            <br><br>Coming up at number one, we have <strong><em>Chris Hemsworth</em></strong>, otherwise known as the God of Thunder. There is no need for an explanation for this pick. Keep in mind that this man is almost <strong>40 years old</strong>!!<br><br>
+                    The <code>< head ></code> tag is a container for metadata. It has all the information that users can't see, but crucial for the file.
+                    <br><br>
+                    And the <code>< body ></code> tag is where the visible information is stored. Most of the things inside here is seen by the user.
+                    <br><br>
 
-            <br><strong>2.</strong> Bradley Simpson<br>
-            <br><img class="img-brad" src="https://i.pinimg.com/originals/bf/f5/73/bff57356ef23147f2f13279de2e8f046.jpg" alt="Bradley Simpson">
-            <br><br>Next at number two we have <strong><em>Bradley Simpson</em></strong>, a very underrated musician. Lead vocalist in a band called The Vamps. <em>My Soulmate</em>.<br><br>
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < head >
+                                < meta charset="UTF-8" >
+                                < title >A Beginner's Guide to HTML and CSS< /title >
+                                < link rel="stylesheet" href="style.css" >
+                            < /head >
+                        </code>
+                    </pre>
 
-            <br><strong>3.</strong> Charles Leclerc<br>
-            <br><img class="img-charles" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Charles_Leclerc_portrait_2020.png" alt="Charles Leclerc">
-            <br><br>And thirdly, we have <strong><em>Charles Leclerc</em></strong>, the absolute <strong>GOAT</strong>. He is so adorably hot in every way. He is also a Formula 1 Racer from Italy, and is unbelievably good-looking and <em>single</em>.<br><br>
+                    <pre>
+                        <code>
+                            < body >
+                                < p >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                < /p >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
 
-        </p>
+            <div>
+                <h3>Header Tags</h3>
+                <p>
+                    Header tags are used in a variety of degrees. They go from sizes 1 through 6 (1 being the largest).
+                    <br><br>
+                    <!--
+                        besides the tags mentioned above, i also used some style tags like "<q>" for quotes and "<strong>" to bolden text
+                    -->
+                    Inside a source-code editor, its typed as <q>h</q> with the any number from 1-6 beside it and is enclosed with delimiters.
+                    <br><br>
+
+                    <strong>Note:</strong> When using tags, it's done in pairs. One opening tag and another closing tag. The closing tag is the same as the opening but with a forward-slash inside the tag.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Title < /h1 >
+
+                                < h2 > Hello World! < /h2 >
+                                < h6 > Lorem ipsum dolor sit amet, consectetur adipiscing elit.< /h6 >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>Paragraph Tag</h3>
+                <p>
+                    The paragraph tag is used to represent a paragraph on a webpage. It helps separate text from other blocks adjacent to it.
+                    <br><br>
+                    Inside a source-code editor, its typed as <q>p</q> enclosed with delimiters.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Hello World! < /h1 >
+                                < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit.< /p >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>Bold, Italic, and Underline Tags</h3>
+                <p>
+                    In HTML, adding prominence to text is simple. There are three main ways to emphasize text.
+                    <br><br>
+                    There's the bold (<code>< bold ></code>) tag, the emphasis (<code>< em ></code>) tag, and the underline (<code>< u ></code>) tag.
+                    <br><br>
+                    These are used to bolden, italicize, and underline text respectively.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Hello World! < /h1 >
+                                < h6 >
+                                    < u >Lorem ipsum< /u > < bold >dolor sit amet < /bold>, 
+                                    consectetur adipiscing < em >elit< /em >.
+                                < /h6 >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>Div Tag</h3>
+                <p>
+                    To semantically divide or separate sections in a webpage, a programmer must use the <code>< div ></code> tag.
+                    <br><br>
+                    In more basic terms, it's a a less prominent <code>< body ></code> tag. It holds the same tags as <code>< body ></code> and creates a section for those tags.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Title < /h1 >
+
+                                < div >
+                                    < h2 > Hello World! < /h2 >
+                                    < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit.< /p >
+                                < /div >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>Image Tag</h3>
+                <p>
+                    When making a webpage, images play a very important role.
+                    <br><br>
+                    In order to insert them, the image (<code>< img ></code>) tag is used. It's also accompanied with <code>src=""</code> for the program to be able to locate the image you want to input.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Hello World! < /h1 >
+
+                                < div >
+                                    < h2 > Image < /h2 >
+                                    < img src="img.jpg" >
+                                < /div >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>Anchor Tag</h3>
+                <p>
+                    Besides images, clickable links are also important.
+                    <br><br>
+                    In order to insert them, the anchor (<code>< a ></code>) tag is used. Unlike the image tag, this one is accompanied with <code>href=""</code> for the program to be able to locate the link you want to input.
+                    <br><br>
+
+                    <strong>Note:</strong> The difference between <code>src</code> and <code>href</code> is simple. Using <code>src</code> embeds a resource, while using <code>href</code> identifies the location that an anchor tag may use.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            < body >
+                                < h1 > Hello World! < /h1 >
+
+                                < a href="link.com">Click this link!< /a >
+
+                                < div >
+                                    < h2 > Image < /h2 >
+                                    < a href="link.com">
+                                        < img src="img.jpg" >
+                                    < /a >
+                                < /div >
+                            < /body >
+                        </code>
+                    </pre>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Basic CSS Attributes</h2>
+
+            <div>
+                <h3>font-family, font-size, and font-weight</h3>
+                <p>
+                    Using the default font is alright, but to add more pizzaz, one can use the <code>font-family</code>, <code>font-size</code>, and <code>font-weight</code> attributes.
+                    <br><br>
+                    This CSS attribute changes the default font to any font of your liking. There are some presets everyone has, but you can also import fonts from GoogleFonts (which we won't be tackling yet).
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            p {
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 32px;
+                                font-weight: bold;
+                            }
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>background-color and color</h3>
+                <p>
+                    Text alone is sometimes not enough, sometimes a change in background color is needed in order to give a pop of color.
+                    <br><br>
+                    The main purpose of the <code>background-color</code> attribute is quite straightforward. It changes the background color. It could be specific to text or even the whole body or just the div.
+                    <br><br>
+                    Now, on the other hand, the <code>color</code> attribute changes the color of the font itself instead of its background.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            body {
+                                background-color: cornflowerblue;
+                            }
+
+                            div {
+                                background-color: rgb(60, 179, 113);
+                            }
+
+                            h2 {
+                                background-color: #746AB0;
+                                color: black;
+                            }
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>height and width</h3>
+                <p>
+                    Letting the computer decide the height and width of something is sometimes not very ideal.
+                    <br><br>
+                    The <code>height</code> attribute changes the specified area above and below a given tag, while the <code>width</code> attribute changes the area to the left and right.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            div {
+                                background-color: rgb(60, 179, 113);
+                                width: 300px;
+                                height: 100px;
+                            }
+
+                            h2 {
+                                background-color: #746AB0;
+                                color: black;
+                                width: auto;
+                                height: 50px;
+                            }
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div>
+                <h3>margin and padding</h3>
+                <p>
+                    Working with HTML and CSS might not give the wanted spacing between elements you want automatically.
+                    <br><br>
+                    This is where the <code>margin</code> and <code>padding</code> attributes come in.
+                    <br><br>
+
+                    Each tag has a specific area to it. Now, these areas have borders. 
+                    Without the <code>padding</code> attribute, any text or image will stay stuck to that border. 
+                    And without <code>margin</code>, those areas wont have any spacing outside its borders.
+                    <br><br>
+
+                    To put it more simply, <code>margin</code> give space from the border out and <code>padding</code> help with space from border in.
+                    <br><br>
+
+                    <strong>Note:</strong> You can add suffixes like <code>-top</code>, <code>-bottom</code>, <code>-left</code>, and <code>-right</code> to specify space in said direction.
+                    <br><br>
+
+                    <strong>Ex:</strong>
+                    <pre>
+                        <code>
+                            div {
+                                background-color: rgb(60, 179, 113);
+                                width: 300px;
+                                height: 100px;
+
+                                margin: 10px;
+                                padding: 5px;
+                            }
+
+                            h2 {
+                                background-color: #746AB0;
+                                color: black;
+                                width: auto;
+                                height: 50px;
+
+                                margin-top: 20px;
+
+                            }
+                        </code>
+                    </pre>
+                </p>
+            </div>
+        </div>
     </body>
 </html>

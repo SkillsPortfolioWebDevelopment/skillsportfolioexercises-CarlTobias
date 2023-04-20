@@ -6,7 +6,10 @@
     this way, i dont need to be repeating myself in every tag that i enter into the code
 
     i also mixed the colors around to make it more of my own output
+
+    i also added a id attribute for the last paragraph, because it has a difference in style
 */
+
 body{
     background-color: #706AA8;
 }
