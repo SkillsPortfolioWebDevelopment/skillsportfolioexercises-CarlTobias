@@ -4,7 +4,7 @@
 
     <!--
         in here, the head and the upper part of the body are almost similar to the first (and every other) page;
-        it has the same title, links for the font, the nav bar, etc.
+        it has the same title, links for the font, etc.
     -->
     <head>
         <title>Harry Potter</title>
@@ -18,12 +18,24 @@
     </head>
 
     <body>
+        <!--first off, i inputted a dropdown menu to make it pleasant for the user and to make the nav bar more compact-->
         <ul class="topbar">
+            <!--
+                the first on the list is the main "logo";
+                when pressed, user will be lead back to the home page
+            -->
             <li><a id="titleinnav" href="Multi-pageWebsite.html">The Wizarding World</a></li>
-    
+
+            <!--
+                here, we have the actual "tabs" for the different pages;
+                some of them have a dropdown menu, and other's don't
+                (depending if it's appropriate for the situation or not)
+            -->
             <li class="drop"><a href="overview.html" class="drop">Overview</a></li>
 
-            <li><a href="plot.html" class="drop">Plot</a>
+            <li class="drop">
+                <a href="plot.html" class="drop">Plot</a>
+
                 <div class="content">
                     <a href="#BookOne">Book One</a>
                     <a href="#BookTwo">Book Two</a>
@@ -68,6 +80,11 @@
         <p>
             <br>
             <p>
+                <!--
+                    here, we have the content for this page (same contents as the one-page website)
+
+                    see more on the next page: "plot.html"
+                -->
                 <div class="headers">Overview</div>
 
                 The first book introduces readers to Harry Potter, an 11 year old boy that lives in the world of non-magical beings, 

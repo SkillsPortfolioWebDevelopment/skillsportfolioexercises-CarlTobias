@@ -25,7 +25,7 @@ p{
 }
 
 #green{
-    /*and this is the id for the section of the paragraph that's different*/
+    /*and this is the id attribute for the section of the paragraph that's different*/
     font-size: 18px;
     color: #00ff00;
     font-weight: 700;

@@ -1,4 +1,4 @@
-/*we have the exact same properties here that can be found in harrypotter.css, except the last one*/
+/*we have the exact same properties here that can be found in harrypotter.css, except the last few blocks of code*/
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 64px;
@@ -8,13 +8,13 @@ h1{
 
 #titleinnav{
     font-family: 'Bebas Neue', cursive;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
     color: #0e1a40;
 
     position: absolute;
-    top: 37px;
-    left: 35px;
+    top: 48px;
+    left: 50px;
 }
 
 .headers{
@@ -44,7 +44,7 @@ body{
     text-align: justify;
     color: #372e29;
 
-    padding: 35px;
+    padding: 50px;
     background-color: #726255;
 }
 
@@ -74,6 +74,30 @@ body{
     top: 0;
 }
 
+.search{
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.casthead{
+    font-weight: bold;
+    color: #1a472a;
+
+    padding-bottom: 15px;
+}
+
+/*the id here is used for an extra page*/
+.intro{
+    /*these properties work together to make the id into the center of the screen*/
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*the section here covers the codes to create a dropdown menu for the different pages*/
 li{
     width: auto;
     float: right;
@@ -118,27 +142,4 @@ li.drop{
 
 .drop:hover .content{
     display: block;
-}
-
-.search{
-    text-align: justify;
-    padding: 0.5rem;
-}
-
-.casthead{
-    font-weight: bold;
-    color: #1a472a;
-
-    padding-bottom: 15px;
-}
-
-/*the id here is used for an extra page*/
-.intro{
-    /*these properties work together to make the id into the canter of the screen*/
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
