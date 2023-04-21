@@ -1,3 +1,10 @@
+/*
+    the codes inside this css file is fairly simple
+
+    for the .title class, i modified the font, font-size, color, text-alignment, and padding using the codes inside the block respectively
+    for the body, it's mostly the same attributes as i used in the .title class, with the addition of the "background-color" attribute
+    and the changes for #img id simply are there to center the picture on the page
+*/
 .title{
     font-family: 'Bebas Neue', cursive;
     font-size: 64px;

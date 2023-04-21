@@ -1,16 +1,18 @@
 <!--
-    Read the following tutorial: Add a hitmap on top of an image and create your own hitmap. Again, images must be cleared for commercial use.
-    Your idea doesn't have to be overly complicated. Here are some suggestions:s
+    for this activity, the task  was to create an image hitmap;
 
-        Example: A country/world map linking to Wikipedia pages for different continents/regions etc.
-        Example: An image of the inside of a computer linking to different explanation/sales pages.
-        Example: A map of BathSpa university that links to relevant course pages.
+    to stick with the theme of the one- and multi-page website activities,
+    i made this one about hogwarts houses from harry potter
 -->
 
 <!DOCTYPE html>
 
 <html>
     <head>
+        <!--
+            inside the head, i put the usual (<title> and <link>);
+            besides the stylesheet link, i also added some other links that help in importing fonts online
+        -->
         <title>Hogwarts Houses</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +24,28 @@
     </head>
 
     <body>
+        <!--
+            inside the body, i added a title and img div;
+
+            the title div is for the title header;
+            and the img div is for the hitmap
+        -->
         <div class="title">Hogwarts Houses</div>
         <br><br>
 
         <div id="img">
+            <!--
+                to create a hitmap, i imported an image (that i made) using an <img> tag;
+                inside that tag, i added an attribute called "usemap" to define the image as a hitmap
+
+                i then used the <map> tag and called the image through the "name=" attribute
+                
+                inside the <map> tag, i used <area> tags to define the areas of the image that the user can click;
+                
+                in this case, i used "rect" because the shapes i need were squares
+                i inputted the coordinates using the "coords=" attribute for the program to know where the are is specifically
+                and i added the link the user will be redirected to when pressing a certain are of the image with the "href=" attribute
+            -->
             <img src="Frame 1.png" usemap="#mapmap">
             <map name="mapmap">
                 <area shape="rect" coords="72, 72, 471, 471" href="https://www.wizardingworld.com/collections/gryffindor">
