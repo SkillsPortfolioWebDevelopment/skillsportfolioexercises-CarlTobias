@@ -9,7 +9,7 @@ body{
     user-select: none;
 }
 
-.h1-1{
+header{
     background-color: #17072b;
     width: auto;
     position: absolute;
@@ -18,10 +18,11 @@ body{
     right: 0px;
 }
 
-h1{
+.h1-1{
     color: #FFFDFF;
     font-family: Tahoma;
     font-size: 60px;
+    font-weight: bold;
     text-decoration: underline;
     width: fit-content;
     margin: auto;
@@ -94,7 +95,6 @@ aside{
     right: 0px;
     width: 480px;
     height: 552px;
-
 }
 
 .h3-2{
@@ -132,6 +132,7 @@ aside{
     position:absolute;
     top: 310px;
     right: 20px;
+    z-index: 1000px;
 }
 
 footer{
@@ -142,8 +143,6 @@ footer{
     position: absolute;
     left: 0px;
     bottom: 0px;
-
-    
 }
 
 #foot{
