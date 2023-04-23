@@ -1,0 +1,138 @@
+<!--
+    for this exercise, the task is to create a webpage 
+    that can allow the user to convert a measuring scale of temperature into another
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--
+            the first area here contains the tags (that the user will not be able to see),
+            but are important for the html file like:
+                - which character set to use
+                - how it will be scaled on different devices
+                - the title
+                - links (for stylesheets and fonts)
+                - etc.
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Temperature Calculator</title>
+        <link rel="stylesheet" href="tempcalc.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--
+            in the body, i first added a <header> section (to define that part of the page);
+            i added a class to a <div> inside the said section in order to modify the header text in css
+        -->
+        <header>
+            <div class="title">Temperature Calculator</div>
+        </header>
+
+        <!--
+            i then added a <form>...
+            
+            i used this tag because out of all the tags i learned throughout the course, this seemed the most appropriate;
+            with <form> i can submit the tag, which gives possibilities for pages with tasks like these
+        -->
+        <form class="box" id="myForm">
+            <!--
+                inside the form, there are different <div> classes...
+
+                the first ones are the "from" and "to" classes, which both have <select>-<option> tags;
+            -->
+            <div class="from">
+                From: 
+                <!--
+                    these <select>-<option> tags have a similarity to arrays...
+
+                    the <select> allows you to have a dropdown selection option;
+                    which work hand-in-hand with the <option> tag;
+                    and gives the <select> tag multiple choices that contain different values
+                -->
+                <select id="select1">
+                    <!--
+                        i created 5 <option> tags for each <select>;
+                        four of which are selectable choices, and one is not
+
+                        i had the first one act like a placeholder, and i made it hidden via css;
+                        th rest were given values from one through four to be used in js later on
+                    -->
+                    <option value="" class="placeholder" disabled selected>Select a scale type</option>
+                    <option value="1">Celcius (°C)</option>
+                    <option value="2">Farenheit (°F)</option>
+                    <option value="3">Kelvin (°K)</option>
+                    <option value="4">Rankine (R)</option>
+                </select>
+            </div>
+            <div class="to">
+                To: 
+                <select id="select2">
+                    <option value="" class="placeholder" disabled selected>Select a scale type</option>
+                    <option value="1">Celcius (°C)</option>
+                    <option value="2">Farenheit (°F)</option>
+                    <option value="3">Kelvin (°K)</option>
+                    <option value="4">Rankine (R)</option>
+                </select>
+            </div>
+
+            <!--
+                the next <div> class is for the user input...
+
+                i used an <input> tag typed as number (because it's the most appropriate for the situation);
+                it also has an id, which is used for js;
+                and a placeholder, so it doesn't look empty while giving the user an idea of what to do
+            -->
+            <div class="converter">
+                Enter value for conversion:
+                <br>
+                <input type="number" id="convertit" placeholder="Enter value here...">
+            </div>
+            
+            <!--
+                next, i added two <button> tags, with one being a submit type, and the other a button type
+
+                the submit type button, helps me clear the page to reset back to default without refreshing (by calling a js function);
+                and the button type button helps me give a custom command to it, which in this case, is to convert the user given temperatue (again, using a js function)
+
+                as seen below, there is an attribute called "onclick,"
+                which basically tells the computer to only call the function when the <button> is pressed by the user
+            -->
+            <button type="submit" value="Clear" class="clearb" onclick="clearForm()">Clear</button>
+            <button type="button" value="Convert" class="convertb" onclick="convert()">Convert</button>
+
+            <!--
+                now, for the last two section of the <form>, i have <div> classes named "answer" and "solution,"
+                which were made to display the answer and solution for the user
+
+                inside each of the <div> classes, there is another <div> class that display the text in the center of the parent <div>;
+                i used the "class" attribute to modify it via css and the "id" attribute to connet it to js
+            -->
+            <div class="answer">
+                Answer:
+                <br><br>
+                <div class="answertext" id="displayans"></div>
+            </div>
+
+            <div class="solution">
+                Solution:
+                <br><br>
+                <div class="solutiontext" id="displaysol"></div>
+            </div>
+        </form>
+
+        <!--
+            and right before i end the <body> tag, i added my <script> tag to connect this file to my js file
+        -->
+        <script src="tempcalc.js"></script>
+    </body>
+</html>
