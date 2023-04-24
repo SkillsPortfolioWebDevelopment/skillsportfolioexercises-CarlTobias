@@ -1,0 +1,212 @@
+<!--for this bonus exercise, the task was to create a non-interactive study planner layout-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--for the <head> tag, we have the usual metadata tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Study Planner</title>
+        <link rel="stylesheet" href="studyplanner.css">
+
+        <!--and some links for font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--inside the body, i added three sections (header, main, and footer)-->
+        <header>
+            <!--inside the header, i have a <nav> and a <main> section-->
+            <nav>
+                <!--
+                    the <nav> tag is for the topmost area that contains a menu and more and;
+                    the <ul> tag below is used to create the menu itself with a dropdown
+                -->
+                <ul>
+                    <!--
+                        to properly create a menu with a dropdown, multiple <li> tags must be within a <ul> tag
+                        
+                        each <li> tag contains an anchor <a> tag, which links other pages to this file
+                    -->
+                    <li><a href="studyplanner.html">Home</a></li>
+                    <!--
+                        to make the dropdown, i added a class to the tag,
+                        the normal <a> tag with a <div> class containing the contents of the dropdown section
+                        the <div> is given a class, which modifies it to work almost like a an <li> tag
+                    -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown">Courses</a>
+        
+                        <div class="dropdown-cont">
+                            <a href="#">Web Programming</a>
+                            <a href="#">Creative Strategies</a>
+                            <a href="#">UX Design</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Assessments</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <!--i also added an image to indicate a profile button-->
+                    <a href="#"><img class="userimg" src="User.png" height="35" width="35"></a>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>
+            <!--now inside the <main> tag section, there are multiple <div> sections with different classes-->
+
+            <!--
+                the first one is for the header section of the first box
+
+                it includes a header text and a <select>-<option> box
+                (which was modified though css)
+            -->
+            <div class="courses">
+                <p class="head">Web Programming</p>
+                <div class="select-container">
+                    <select class="select-box">
+                        <!--<select>-<option> boxes let the user select an option with multiple choices-->
+                        <option value="1" href="#">Modules</option>
+                        <option value="2" href="#">Participants</option>
+                        <option value="3" href="#">Grades</option>
+                        <option value="4" href="#">Competencies</option>
+                    </select>
+
+                    <div class="icon-container">
+                        <img src="caret-down-solid.svg">
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <div class="course-box">
+                    <!--
+                        right below the first <div> section is the course box
+                        (which is the are that contains the main information of the page)
+                    -->
+
+                    <div class="lessons">
+                        <!--
+                            each section of this <div> is inside yet another <div>
+
+                            those divs contain the title head and an <article> class for the paragraph text
+                            (which is supposed to mimic a short, concise description of each lesson)
+
+                            its also given an anchor tag so that the user can be directed to that page if needed
+                        -->
+                        <a href="#">
+                            <p class="head3">Lesson 1: Intro to HTML</p>
+                            <article class="contentss">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam lacus, lacinia at dignissim sed, maximus in sapien. Pellentesque sed feugiat tortor, nec tincidunt est. Mauris eu orci et quam tempus sollicitudin. Praesent vel elit commodo arcu imperdiet luctus quis at enim. Aliquam egestas facilisis blandit. Vivamus consectetur ac turpis et condimentum. Nunc urna odio, pellentesque id sagittis quis, vehicula sed arcu. Sed vehicula ex at cursus elementum. Nunc gravida fringilla tristique.
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="lessons">
+                        <a href="#">
+                            <p class="head3">Lesson 2: Intro to CSS</p>
+                            <article class="contentss">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam lacus, lacinia at dignissim sed, maximus in sapien. Pellentesque sed feugiat tortor, nec tincidunt est. Mauris eu orci et quam tempus sollicitudin. Praesent vel elit commodo arcu imperdiet luctus quis at enim. Aliquam egestas facilisis blandit. Vivamus consectetur ac turpis et condimentum. Nunc urna odio, pellentesque id sagittis quis, vehicula sed arcu. Sed vehicula ex at cursus elementum. Nunc gravida fringilla tristique.
+                            </article>
+                        </a>
+                    </div>
+
+                    <div class="lessons">
+                        <a href="#">
+                            <p class="head3">Lesson 3: Links, Navigation, Images, and Tables</p>
+                            <article class="contentss">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam lacus, lacinia at dignissim sed, maximus in sapien. Pellentesque sed feugiat tortor, nec tincidunt est. Mauris eu orci et quam tempus sollicitudin. Praesent vel elit commodo arcu imperdiet luctus quis at enim. Aliquam egestas facilisis blandit. Vivamus consectetur ac turpis et condimentum. Nunc urna odio, pellentesque id sagittis quis, vehicula sed arcu. Sed vehicula ex at cursus elementum. Nunc gravida fringilla tristique.
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--the next <div> here is for the are on the right side of the page-->
+            <div class="assessments">
+                <!--
+                    similar to the previous section,
+                    there is another section here with a title head and a <select>-<option> box
+                -->
+                <p class="head2">Upcoming Tasks</p>
+                <div class="select-container2">
+                    <select class="select-box2">
+                        <option value="1">All</option>
+                        <option value="2">Web Development</option>
+                        <option value="3">Creative Strategies</option>
+                        <option value="4">UX Design</option>
+                    </select>
+
+                    <div class="icon-container2">
+                        <img src="caret-down-solid.svg">
+                    </div>
+                </div>
+
+                <div class="to-do-box">
+                    <!--
+                        there is also another div for its respective box, that contains secondary information
+                        (not all that crucial, but handy to have in the page)
+                    -->
+                    <div class="taskbox">
+                        <!--the <div> here is made for the different boxes that give the secondary information-->
+                        <br><br>
+                        <!--
+                            there's also an anchor tag here to enable linking from this page to another
+                            to make the user experience more easy and flowy
+                        -->
+                        <a href="#"><div class="taskconthead">Chapter 1-3 Exercises</div></a>
+                            <div class="taskcontside">
+                            <p class="taskcontsidesoft">05 day/s left</p>
+                            Date Due: March 25, 2023
+                        </div>
+                    </div>
+
+                    <div class="taskbox">
+                        <br><br>
+                        <a href="#"><div class="taskconthead">Sway Portfolio</div></a>
+                            <div class="taskcontside">
+                            <p class="taskcontsidesoft">14 day/s left</p>
+                            Date Due: May 7, 2023
+                        </div>
+                    </div>
+
+                    <div class="taskbox">
+                        <br><br>
+                        <a href="#"><div class="taskconthead">App Idea Proposal</div></a>
+                            <div class="taskcontside">
+                            <p class="taskcontsidesoft">48 day/s left</p>
+                            Date Due: June 10, 2023
+                        </div>
+                    </div>
+
+                    <div class="taskbox">
+                        <br><br>
+                        <a href="#"><div class="taskconthead">Chapter 4-6 Exercises</div></a>
+                            <div class="taskcontside">
+                            <p class="taskcontsidesoft">07 day/s left</p>
+                            Date Due: April 30, 2023
+                        </div>
+                    </div>
+
+                    <div class="taskbox">
+                        <br><br>
+                        <a href="#"><div class="taskconthead">Makey-Makey</div></a>
+                            <div class="taskcontside">
+                            <p class="taskcontsidesoft">48 day/s left</p>
+                            Date Due: June 10, 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--and finally a footer to add a sort of mark that i created it-->
+        <footer>Study Planner 2023</footer>
+    </body>
+</html>

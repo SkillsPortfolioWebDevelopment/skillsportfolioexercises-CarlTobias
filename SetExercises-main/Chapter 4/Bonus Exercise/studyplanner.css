@@ -1,0 +1,352 @@
+/*the css for this exercise is fairly simple, but there are some complicated code*/
+
+body {
+    /*for the <body> tag, i used fairly simple attributes*/
+
+    /*i changed the color for the background and text using these two codes*/
+    background-color: #FEF5FF;
+    color: #181A1B;
+    /*changed the font with this one*/
+    font-family: 'Lato', sans-serif;
+
+    /*and made the page unscrollable with overflow: hidden*/
+    overflow: hidden;
+}
+
+/*
+    the next three blocks are different .classes for title texts i used throughout the page...
+    they use mostly the same things except some differences in positioning and size
+*/
+
+.head {
+    color: #181A1B;
+    font-size: 32px;
+    font-weight: bold;
+
+    position: relative;
+    left: 0px;
+}
+
+.head2 {
+    color: #181A1B;
+    font-size: 32px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 68px;
+    right: 286px;
+    z-index: 1000;
+}
+
+.head3 {
+    color: #181A1B;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course-box {
+    /*this one creates the main content box*/
+
+    /*i positioned it using these two*/
+    position: absolute;
+    top: 175px;
+
+    /*changed its size with these*/
+    height: 600px;
+    width: 900px;
+
+    /*made the corners rounded and changed the box color*/
+    border-radius: 10px;
+    background-color: #DDC0DF;
+}
+
+.lessons {
+    /*this is the <div> .class that is used for each "lesson" section in the box*/
+
+    /*all i did for this was change the height (to give some area in between the <div> tags*/
+    height: 190px;
+    padding-top: 1px;
+    padding-left: 10px;
+}
+
+.contentss {
+    /*and here area for the paragraphed article (still included in the .lessons <div>)*/
+
+    /*i modified background color here (to make it stand out a little)*/
+    background-color: #8F6E91;
+
+    /*and some modifications to the font*/
+    font-size: 18px;
+
+    /*and i added padding and gave a width of 95% so it doesn't go to the edhe of the parent <div>*/
+    width: 95%;
+    padding: 5px;
+}
+
+.to-do-box {
+    /*here, i input attributes similar to the .course-box class, with some differences to where its positioned, sized, and colored*/
+    position: absolute;
+    top: 175px;
+    right: 8px;
+
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+
+    background-color: #8F6E91;
+}
+
+.taskbox {
+    /*and this one contains attributes similar to the .lessons class, again with variations to its positioning, size, and color*/
+    background-color: #FEF5FF;
+    height: 100px;
+    width: 95%;
+    margin: 16px;
+    margin-left: 12px;
+}
+
+.taskconthead {
+    /*this contains attributes to modify the header text for this <div> section*/
+
+    /*i modifed the text by, reiterating the font-family, change the font-size, -weight, and adding an underline*/
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+
+    /*with some padding to the left*/
+    padding-left: 10px;
+}
+
+.taskcontside {
+    /*for the the rest of the text in the .taskbox area, i used this .class*/
+
+    /*with font sized 14px*/
+    font-size: 14px;
+
+    /*and positioned to the right side*/
+    position: relative;
+    top: -45px;
+    right: -305px;
+    
+}
+
+.taskcontsidesoft {
+    /*i also made a lighter colored version of the text to make it softer and less-defined*/
+    font-size: 14px;
+    color: #5c5f60;
+}
+
+a {
+    /*here, i modified the anchor <a> tag to be stripped of its purple color and underline*/
+    color: #181A1B;
+    text-decoration: none;
+    outline: none;
+}
+
+footer {
+    /*and for the footer, i used these four to position it to the bottom of the screen*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    /*aligned the text to the center and changed the font-color*/
+    text-align: center;
+    color: #FEF5FF;
+
+    /*added a dark background and gave a padding of 5px*/
+    background-color: #181A1B;
+    padding: 5px;
+}
+
+/*the section below contains codes made to customize the <select>-<option> boxes*/
+
+/*these first two blocks, remove the default box and allow me to make my own custom one*/
+.select-container {
+    /*i first used these two to make the box easier to work with*/
+    display: flex;
+    justify-content: center;
+
+    /*then, i changed its position with these two*/
+    position: absolute;
+    top: 100px;
+
+    /*and the size with these two*/
+    min-width: 250px;
+    height: 50px;
+}
+
+.select-box {
+    /*these two here make the <select> box hidden*/
+    border: none;
+    appearance: none;
+    
+    /*and the ones here changes how it looks*/
+    padding: 10px;
+    width: fit-content;
+    color: #181A1B;
+    background-color: #DDC0DF;
+    font-size: 20px;
+    border-radius: 5px;
+
+    /*while these change the position*/
+    position: absolute;
+    top: 0px;
+    left: 752px;
+}
+
+.select-container .icon-container {
+    /*the block here adds CSS rules to the arrow image inside the <select> box*/
+
+    /*this changes its size*/
+    width: 50px;
+    height: 100%;
+
+    /*positioning*/
+    position: absolute;
+    top: -5px;
+    left: 850px;
+
+    /*and alignment*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-container img {
+    /*and this modifies the arrow image area*/
+    width: 20px;
+}
+
+/*now this area is identical to the section above, except for the positioning of the box*/
+.select-container2 {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+    min-width: 250px;
+    height: 50px;
+}
+
+.select-box2 {
+    border: none;
+    appearance: none;
+
+    padding: 10px;
+    width: fit-content;
+    color: #181A1B;
+    background-color: #DDC0DF;
+    font-size: 20px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.select-container2 .icon-container2 {
+    width: 50px;
+    height: 100%;
+
+    position: absolute;
+    top: -5px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container2 img {
+    width: 20px;
+}
+
+/*now for the last section, we have the CSS rules for the menu and the dropdown*/
+ul{
+    /*the <ul> tag is first made to be stripped of its default style*/
+    list-style-type: none;
+    overflow: hidden;
+
+    /*i remove the spacing here in order not to mess with the spacing for the <li> tag*/
+    margin: 0;
+    padding: 0;
+    top: 0;
+
+    /*and a little change to its style properties*/
+    background-color: #DDC0DF;
+    box-shadow: 2px 2px 2px #8F6E91;
+}
+
+li{
+    /*for the <li> tag, i made the width depend on how much i put, make it stay on the top-left side*/
+    width: auto;
+    float: left;
+    top: 0;
+}
+
+li a{
+    /*now for the anchor <a> tags inside the <li> tags...*/
+
+    /*i made them line up in a row with inline-block*/
+    display: inline-block;
+
+    /*changed the font color, text-alignment and text-decoration*/
+    color: #181A1B;
+    text-align: center;
+
+    /*and added some padding to space it out*/
+    padding: 20px 25px;
+}
+
+    li:hover{
+        /*i also added a hover effect, which makes it highlighted with a different color*/
+        background-color: #8F6E91;
+    }
+
+.dropdown li:visited{
+    /*this makes the clicked item in the menu highlighted so the user knows what page they're in*/
+    background-color: #8F6E91;
+}
+
+li.dropdown{
+    /*this class aligns the list that initializes the dropdown*/
+    display: inline-block;
+}
+
+.dropdown-cont{
+    /*this block here fixes the actual hidden dropdown menu*/
+    display: none;
+    position: absolute;
+    background-color: #759160;
+    height: 100px;
+    z-index: 1000;
+}
+
+.dropdown-cont a{
+    /*and here we have the style modifications*/
+    color: white;
+    background-color: #759160;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-cont a:hover{
+    /*and like the previous hover, this one is for the inside of the dropdown*/
+    background-color: #CCDEBF;
+}
+
+.dropdown:hover .dropdown-cont{
+    /*and here we have a final alignment*/
+    display: block;
+}
+
+.userimg{
+    /*and i gave spacing and positioning to the image inside the menu*/
+    float: right;
+    margin: 12px;
+}
