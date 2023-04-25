@@ -1,0 +1,344 @@
+<!--
+    for the bonus exercise, the task was to take the soundboard and level it up
+    by making different pages for the soundboard and adding a text-to-speech feature
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+            once again, inside the <head> tag, i have inputted <meta> tags that hold and give information to the file
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Alan Partridge Soundboard</title>
+        <link rel="stylesheet" href="soundboardadvanced.css">
+        <!--
+            the <link> tag here imports .svg files from a website named https://fontawesome.com
+            for this activity, i imported left and right arrows for the buttons i used
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <!--
+            inside the body, i have two main <div> sections:
+                - the text-to-speech area
+                - the soundboard area
+        -->
+        
+        <div class="addedpart">
+            <!--
+                in this section, i added a paragraph <p> tag with a class named .title for the text shown on the image
+                i also added a <textare> tag for the users to be able to input whatever they would like for the text-to-speech function
+                in addition to that,i also added a <button> tag to run the text-to-speech function when ready (as seen with the onclick=() attribute)
+                
+                i used <textare> instead of <input type="text"> because:
+                    - the instructions instructed me to
+                    - it's more appropriate for the situation (<textarea> is for large amounts of text that can be multilined, while <input> is for smaller amounts of texts)
+            -->
+            <p class="title">🐠 Physchedelic Fish</p>
+            <textarea type="text" id="text2speech" placeholder="Type Here"></textarea>
+            <button type="button" class="sayit" onclick="text2Speech()">Say It</button>
+        </div>
+
+        
+        <div class="spacer" id="groupcontainer">
+            <!--
+                for this area, it contains the same sounds as before and more...
+
+                using css, i squished it to the right side of the screen in accordance to the reference image given;
+                and i separated each page by nine sounds... there's 38, so 4 pages are full, while the last page has only 2
+
+                following the numbering from this and the previous activity, i placed numbers 10 through 18 on the second page;
+                and alphabetically inputted the rest
+            -->
+            <p class="header">Sample Bank 2</p>
+            <div id="group1">
+                <div class="rows">
+                    <div class="box" onclick="tenpastfive()">
+                        <p class="box-number">1.</p>
+                        <p class="box-title">10 Past 5</p>
+                        <p class="box-time">1.4</p>
+                    </div>
+
+                    <div class="box" onclick="aboot()">
+                        <p class="box-number">2.<br></p>
+                        <p class="box-title">Aboot</p>
+                        <p class="box-time">0.5</p>
+                    </div>
+
+                    <div class="box" onclick="afraidso()">
+                        <p class="box-number">3.</p>
+                        <p class="box-title">Afraid So</p>
+                        <p class="box-time">1.02</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="ahcomeon()">
+                        <p class="box-number">4.</p>
+                        <p class="box-title">Ah Come On</p>
+                        <p class="box-time">1.38</p>
+                    </div>
+
+                    <div class="box" onclick="aye()">
+                        <p class="box-number">5.</p>
+                        <p class="box-title">Aye</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="bestfriends()">
+                        <p class="box-number">6.</p>
+                        <p class="box-title">Best Friends</p>
+                        <p class="box-time">1.91</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="bollocks()">
+                        <p class="box-number">7.</p>
+                        <p class="box-title">Bollocks</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="bugger()">
+                        <p class="box-number">8.</p>
+                        <p class="box-title">Bugger</p>
+                        <p class="box-time">1.07</p>
+                    </div>
+
+                    <div class="box" onclick="cashback()">
+                        <p class="box-number">9.</p>
+                        <p class="box-title">Cashback</p>
+                        <p class="box-time">2.25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="group2">
+                <div class="rows">
+                    <div class="box" onclick="ahha()">
+                        <p class="box-number">10.</p>
+                        <p class="box-title">Ah-Ha</p>
+                        <p class="box-time">1.4</p>
+                    </div>
+
+                    <div class="box" onclick="dan()">
+                        <p class="box-number">11.<br></p>
+                        <p class="box-title">Dan</p>
+                        <p class="box-time">0.5</p>
+                    </div>
+
+                    <div class="box" onclick="backofthenet()">
+                        <p class="box-number">12.</p>
+                        <p class="box-title">Back of the Net</p>
+                        <p class="box-time">1.02</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="bangoutoforder()">
+                        <p class="box-number">13.</p>
+                        <p class="box-title">Bang Out of Order</p>
+                        <p class="box-time">1.38</p>
+                    </div>
+
+                    <div class="box" onclick="jurassicpark()">
+                        <p class="box-number">14.</p>
+                        <p class="box-title">Jurassic Park</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="smellmycheese()">
+                        <p class="box-number">15.</p>
+                        <p class="box-title">Smell my Cheese</p>
+                        <p class="box-time">1.91</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="goal()">
+                        <p class="box-number">16.</p>
+                        <p class="box-title">Goal</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="kissmyface()">
+                        <p class="box-number">17.</p>
+                        <p class="box-title">Kiss my Face</p>
+                        <p class="box-time">1.07</p>
+                    </div>
+
+                    <div class="box" onclick="hellopartridge()">
+                        <p class="box-number">18.</p>
+                        <p class="box-title">Hello Partridge</p>
+                        <p class="box-time">2.25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="group3">
+                <div class="rows">
+                    <div class="box" onclick="conman()">
+                        <p class="box-number">19.</p>
+                        <p class="box-title">Conman</p>
+                        <p class="box-time">1.4</p>
+                    </div>
+
+                    <div class="box" onclick="doyoulikeowls()">
+                        <p class="box-number">20.<br></p>
+                        <p class="box-title">Do You Like Owls?</p>
+                        <p class="box-time">0.5</p>
+                    </div>
+
+                    <div class="box" onclick="firstclass()">
+                        <p class="box-number">21.</p>
+                        <p class="box-title">First Class</p>
+                        <p class="box-time">1.02</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="forgetit()">
+                        <p class="box-number">22.</p>
+                        <p class="box-title">Forget It</p>
+                        <p class="box-time">1.38</p>
+                    </div>
+
+                    <div class="box" onclick="getridofit()">
+                        <p class="box-number">23.</p>
+                        <p class="box-title">Get Rid of It</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="helloooo()">
+                        <p class="box-number">24.</p>
+                        <p class="box-title">Helloooo</p>
+                        <p class="box-time">1.91</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="howoldareyou()">
+                        <p class="box-number">25.</p>
+                        <p class="box-title">How Old Are You?</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="idloveto()">
+                        <p class="box-number">26.</p>
+                        <p class="box-title">I'd Love To</p>
+                        <p class="box-time">1.07</p>
+                    </div>
+
+                    <div class="box" onclick="idiot()">
+                        <p class="box-number">27.</p>
+                        <p class="box-title">Idiot</p>
+                        <p class="box-time">2.25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="group4">
+                <div class="rows">
+                    <div class="box" onclick="mentalist()">
+                        <p class="box-number">28.</p>
+                        <p class="box-title">Metalist</p>
+                        <p class="box-time">1.4</p>
+                    </div>
+
+                    <div class="box" onclick="nirvana()">
+                        <p class="box-number">29.<br></p>
+                        <p class="box-title">Nirvana</p>
+                        <p class="box-time">0.5</p>
+                    </div>
+
+                    <div class="box" onclick="no()">
+                        <p class="box-number">30.</p>
+                        <p class="box-title">No</p>
+                        <p class="box-time">1.02</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="ok()">
+                        <p class="box-number">31.</p>
+                        <p class="box-title">Ok</p>
+                        <p class="box-time">1.38</p>
+                    </div>
+
+                    <div class="box" onclick="striker()">
+                        <p class="box-number">32.</p>
+                        <p class="box-title">Striker</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="thirdtime()">
+                        <p class="box-number">33.</p>
+                        <p class="box-title">Third Time</p>
+                        <p class="box-time">1.91</p>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="box" onclick="toughone()">
+                        <p class="box-number">34.</p>
+                        <p class="box-title">Tough One</p>
+                        <p class="box-time">1.49</p>
+                    </div>
+
+                    <div class="box" onclick="um()">
+                        <p class="box-number">35.</p>
+                        <p class="box-title">Um</p>
+                        <p class="box-time">1.07</p>
+                    </div>
+
+                    <div class="box" onclick="what()">
+                        <p class="box-number">36.</p>
+                        <p class="box-title">What</p>
+                        <p class="box-time">2.25</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="group5">
+                <div class="rows">
+                    <div class="box" onclick="why()">
+                        <p class="box-number">37.</p>
+                        <p class="box-title">Why</p>
+                        <p class="box-time">1.4</p>
+                    </div>
+
+                    <div class="box" onclick="yeahsodoi()">
+                        <p class="box-number">38.<br></p>
+                        <p class="box-title">Yeah, So Do I</p>
+                        <p class="box-time">0.5</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--
+                in the final part of the <div>, i added some clickable buttons for switching pages
+
+                the buttons are classed .arrowright and .arrowleft and identified by #groupbutton 
+                with their respective functions using the onlcick() attribute
+
+                inside the button, i used an <i> tag (which is typically used to italicize text, 
+                but it is also the tag that fontawesome uses to import images), 
+                to input the .svg files for the left and right arrows
+            -->
+            <button class="arrowright" id="groupbutton" onclick="nextGroup()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="arrowleft" id="groupbutton" onclick="prevGroup()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </div>
+        
+        <!--and of course, i also added a <script> tag to call the functions inside my .js file-->
+        <script src="soundboardadvanced.js" type="text/javascript"></script>
+    </body>
+</html>

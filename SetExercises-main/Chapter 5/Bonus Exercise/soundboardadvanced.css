@@ -1,0 +1,211 @@
+/*
+    for the upper part of this .css file, you won't see much difference compared to the css file for the 
+    soundboard exercise because it uses most of it here too
+
+    there are some changes, but they are minor...
+    the new additions are at the bottom section (indicated by a comment line)
+*/
+
+body{
+    width: fit-content;
+    background-image: linear-gradient(30deg, #0f4c81, #7442c8);
+    background-attachment: fixed;
+
+}
+
+.header{
+     /*here, i changed the width, top, and changed left to right as i saw fit*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #DC302B;
+    
+    width: 737px;
+    background-color: #F2F2F6;
+
+    position: absolute;
+    top: 10px;
+    right: 30px;
+
+}
+
+.rows{
+    /*in order to push the whole thing to the right, i had to define a margin to the left*/
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+}
+
+.box{
+    /*and i had to change the width and height of the boxes to make them fit in their section of the screen*/
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 15px;
+    background-color: #F2F2F6;
+    
+    width: 200px;
+    height: 125px;
+    padding-top: 10px;
+
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box:hover{
+    background-color: #DC302B;
+}
+
+.spacer{
+    margin-top: 54px;
+    margin-bottom: 46px;
+}
+
+.box-number{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+}
+
+.box-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.box-time{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*added benefits charot*/
+
+.addedpart {
+    position: absolute;
+    top: 9px;
+}
+
+.title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #F2F2F6;
+
+    background-color: #E72F52;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: fit-content;
+}
+
+/*--------------------------------------THE AREA HERE HAS NEW COMMAND BLOCKS--------------------------------------*/
+
+textarea {
+    /*i first removed all the default settings in these four attributes*/
+    border: none;
+    appearance: none;
+    outline: none;
+    resize: none;
+
+    /*and i set my own styles here in these attributes*/
+    background-color: #FFFFFF;
+    color: #757575;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+
+    /*added some modifications to the size of the box and the curves of the corners*/
+    border-radius: 10px;
+    width: 425px;
+    height: 200px;
+    padding: 5px;
+
+    /*and the positioning here in these three*/
+    position: relative;
+    top: 85px;
+    left: 30px;
+}
+
+button.sayit {
+    /*once again, i remove the default settings using these three properties*/
+    border: none;
+    appearance: none;
+    outline: none;
+    
+    /*gave my own style to the background text here*/
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 28px;
+
+    /*here we have stylings for the border and size*/
+    border: 10px solid black;
+    border-radius: 10px;
+    width: 125px;
+    height: 100px;
+
+    /*and positioning here*/
+    position: absolute;
+    top: 85px;
+    left: 475px;
+}
+
+.sayit:hover{
+    /*for the hover feature, i invert the color of everything visible in the button to create a contrast*/
+    background-color: black;
+    color: #FFFFFF;
+    border: 10px solid #FFFFFF;
+}
+
+#groupbutton{
+    /*this id is for both of the arrow buttons*/
+
+    /*once again, i remove the default styles using the three attributes here*/
+    border: none;
+    appearance: none;
+    outline: none;
+    
+    /*i used these properties to modify the arrows*/
+    color: black;
+    font-size: 50px;
+    text-align: center;
+
+    /*and these to modify the background and borders*/
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    border-radius: 50%;
+
+    /*and again, the positioning*/
+    display: flex;
+    float: right;
+}
+
+.arrowright{
+    /*for the right arrow, i fixed its position so that it doesn't move anywhere*/
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+
+    margin: 15px;
+}
+
+.arrowleft{
+    /*same thing for the left arrow... i just had to separate it so it doesn't stay fixed together in one place*/
+    position: fixed;
+    bottom: 75px;
+    right: 100px;
+
+    margin: 15px;
+}
+
+#groupbutton:hover{
+    /*similar to the .sayit:hover feature, i also made the hover feature here invert the colors for contrast and emphasis*/
+    background-color: black;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+}

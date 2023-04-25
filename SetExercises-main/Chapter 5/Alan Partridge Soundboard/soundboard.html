@@ -1,68 +1,106 @@
+<!--
+    for this exercise, the task was to recreate a soundboard using html, css, and js;
+    we were given an image for reference and audio files for the sounds
+-->
+
 <!DOCTYPE html>
 
 <html>
     <head>
+        <!--inside the <head> tag, there's the usual <meta> tags that give certain information for the webpage-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Alan Partridge Soundboard</title>
         <link rel="stylesheet" href="soundboard.css">
     </head>
 
     <body>
+        <!--
+            first in the body, added a paragraph <p> tag that has a class named .header for the title;
+            i tried my best to copy the style from the image as much as i could (font, size, width, color, etc.)
+        -->
         <p class="header">Audio Sampler</p>
+
+        <!--
+            under the .header class, you can immediately see a <div>
+
+            this <div> is classed as .spacer so that the the <div> "children" inside will be spaced appropriately
+        -->
         <div class="spacer">
-            <div id="rows">
-                <div id="box" onclick="ahha()">
+
+            <!--
+                inside the parent <div>, there are multiple child <div> sections which are classed as .rows;
+                
+                the class makes sure that the horizontal sections (top, middle, and bottom rows) are centered
+            -->
+            <div class="rows">
+                <!--
+                    now, each <div> child of this parent <div> is an individual clickable box
+
+                    each of them are given a class called .box which the css uses to create the box it's in
+
+                    it's also given an onclick=() attribute so the javascript can call the specific function to play
+                    the sound for each button
+                -->
+                <div class="box" onclick="ahha()">
+                    <!--
+                        i added some paragraph <p> tags here with different classes to the text
+                        (again, to make it as similar as i can to the reference picture)
+                    -->
                     <p class="box-number">10.</p>
                     <p class="box-title">Ah-Ha</p>
                     <p class="box-time">1.4</p>
                 </div>
 
-                <div id="box" onclick="dan()">
+                <div class="box" onclick="dan()">
                     <p class="box-number">11.<br></p>
                     <p class="box-title">Dan</p>
                     <p class="box-time">0.5</p>
                 </div>
 
-                <div id="box" onclick="backofthenet()">
+                <div class="box" onclick="backofthenet()">
                     <p class="box-number">12.</p>
                     <p class="box-title">Back of the Net</p>
                     <p class="box-time">1.02</p>
                 </div>
             </div>
 
-            <div id="rows">
-                <div id="box" onclick="bangoutoforder()">
+            <div class="rows">
+                <div class="box" onclick="bangoutoforder()">
                     <p class="box-number">13.</p>
                     <p class="box-title">Bang Out of Order</p>
                     <p class="box-time">1.38</p>
                 </div>
 
-                <div id="box" onclick="jurassicpark()">
+                <div class="box" onclick="jurassicpark()">
                     <p class="box-number">14.</p>
                     <p class="box-title">Jurassic Park</p>
                     <p class="box-time">1.49</p>
                 </div>
 
-                <div id="box" onclick="smellmycheese()">
+                <div class="box" onclick="smellmycheese()">
                     <p class="box-number">15.</p>
                     <p class="box-title">Smell my Cheese</p>
                     <p class="box-time">1.91</p>
                 </div>
             </div>
 
-            <div id="rows">
-                <div id="box" onclick="goal()">
+            <div class="rows">
+                <div class="box" onclick="goal()">
                     <p class="box-number">16.</p>
                     <p class="box-title">Goal</p>
                     <p class="box-time">1.49</p>
                 </div>
 
-                <div id="box" onclick="kissmyface()">
+                <div class="box" onclick="kissmyface()">
                     <p class="box-number">17.</p>
                     <p class="box-title">Kiss my Face</p>
                     <p class="box-time">1.07</p>
                 </div>
 
-                <div id="box" onclick="hellopartridge()">
+                <div class="box" onclick="hellopartridge()">
                     <p class="box-number">18.</p>
                     <p class="box-title">Hello Partridge</p>
                     <p class="box-time">2.25</p>
@@ -70,6 +108,7 @@
             </div>
         </div>
 
+        <!--and after all of those <div> tags, i added the <script> tag here to connect the .js files-->
         <script src="soundboard.js" type="text/javascript"></script>
     </body>
 </html>

@@ -1,15 +1,26 @@
+<!--for this activity, the task was to embed a video using the <video> tag-->
+
 <!DOCTYPE html>
 
 <html>
     <head>
+        <!--in the <head> tag, i put the essential <meta> tags for the html file-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Embed Video</title>
 
+        <!--and for this .html file, i decided to use a internal css <style> tag-->
         <style>
+            /*i mainy used basic codes for the css properties*/
+
             body{
+                /*i changed the page background here*/
                 background-color: #6CB1D9;
             }
 
             p{
+                /*changed font properties here*/
                 font-size: 60px;
                 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 text-align: center;
@@ -17,6 +28,7 @@
             }
 
             video{
+                /*changed the video box size and position here*/
                 width: 600px;
                 height: 600px;
                 position: absolute;
@@ -25,6 +37,7 @@
             }
 
 
+            /*the last two blocks reposition and rezise the gifs found on the sides of the video*/
             .gif-left{
                 width: 400px;
                 height: 244px;
@@ -44,14 +57,23 @@
     </head>
 
     <body>
+        <!--inside the body i added the paragraph <p> tag for the title because it's the only text in the file-->
         <p>Into the THICC of It<p>
-        
+
+        <!--added the gifs here-->
         <img class="gif-left" src="https://media.tenor.com/tZRpSE2eMeoAAAAd/backyardigans-dancing.gif">
         <img class="gif-right" src="https://media.tenor.com/tZRpSE2eMeoAAAAd/backyardigans-dancing.gif">
 
-        <video controls autoplay loop>
-            <source src="C:\Users\iamca\OneDrive\Documents\GitHub\skillsportfolioexercises-CarlTobias\SetExercises-main\Chapter 5\Chapter 5\intothethiccofit.mp4" type="video/mp4">
+        <!--
+            and the <video> tag below...
+            it has elements that allow it to autoplay and loop
+        -->
+        <video autoplay loop>
+            <!--
+                and inside the tag has a <source> tag to imbed the video link (local)
+                i also defined the type of file it is for the computer to process
+            -->
+            <source src="C:\Users\iamca\OneDrive\Documents\GitHub\skillsportfolioexercises-CarlTobias\SetExercises-main\Chapter 5\Embed Video\intothethiccofit.mp4" type="video/mp4">
         </video>
-        
     </body>
 </html>

@@ -1,54 +1,82 @@
-body{
-    width: fit-content;
-    background-image: linear-gradient(30deg, #0f4c81, #7442c8);
-    background-attachment: fixed;
+/*for the css, there are some tricky attributes that i worked with*/
 
+body{
+    /*
+        the rules i added for the body included defining the width of the body with hidden overflow;
+
+        i did that in order to allow myself to center my items with "display: flex; and justify-content: center;"
+        and i hid the overflow because when defining width as 100%, it sometimes makes the page scrollable,
+        but i want it fixed
+    */
+    width: 100%;
+    overflow: hidden;
+
+    /*i also changed the background into a gradient color from an ocenaic blue to a mystical purple*/
+    background-image: linear-gradient(30deg, #0f4c81, #7442c8);
+    /*similar to how i used overflow, this attribute also helps with keeping the page fixed and unscrollable*/
+    background-attachment: fixed;
 }
 
 .header{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*for the title header, i used the usual text attributes to make it accurate to the reference image*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     text-align: center;
     color: #DC302B;
+    
+    /*i defined a specific width that spans accross the full length as each of the .rows classes*/
+    width: 1412px;
     background-color: #F2F2F6;
 
-    width: 1412px;
+    /*i centered it using these three attributes here*/
     position: absolute;
-    z-index: 1000;
     top: 10px;
-    left: 28px;
-
+    left: 50px;
 }
 
-#rows{
+.rows{
+    /*i centered and aligned the rows using these two (mentioned earlier)*/
     display: flex;
     justify-content: center;
+
+    /*i didn't use the position absolute because it will require more codes... this is the most efficient way to go*/
 }
 
-#box{
+.box{
+    /*for the .box class, i styled the borders using these three;*/
     border-style: solid;
     border-width: 10px;
     border-radius: 15px;
-    background-color: #F2F2F6;
 
+    /*i defined the size of the box, the color of the box, and the spacing inside the box here*/
     width: 425px;
     height: 135px;
+    background-color: #F2F2F6;
     padding-top: 10px;
 
+    /*and here, i added margins (which as we all know by now, changes the spacing right outside the element*/
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#box:hover{
+.box:hover{
+    /*and for the hover feature, i change the background-color to red (just like in the picture)*/
     background-color: #DC302B;
 }
 
 .spacer{
+    /*  for the main <div> that mostly contains everything,
+        i added a margin to the top to make the alignment a little bit more accurate
+    */
     margin-top: 75px;
 }
 
+
+/*and for the final three .classes, we have the different text stylings for the content inside the buttons*/
+
 .box-number{
+    /*for the numbering (10., 11., 12., etc.) i styled the text as seen below*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     text-align: center;
@@ -56,6 +84,7 @@ body{
 }
 
 .box-title{
+    /*for the title of the sound for the buttons, i styled the text as seen below*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: bolder;
@@ -65,9 +94,14 @@ body{
 }
 
 .box-time{
+    /*and for the duration of the sounds (1.07, 1.49, 0.5, etc.) i styled the text as seen below*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/*  as you can see, the attributes for the last three are mostly similar,
+    but i changed the sizes and margins to make it as identical as i can to the example given to us
+*/
