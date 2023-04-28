@@ -85,7 +85,7 @@ body{
     margin-bottom: 15px;
 }
 
-/*added benefits charot*/
+/*--------------------------------------THE AREA HERE HAS NEW COMMAND BLOCKS--------------------------------------*/
 
 .addedpart {
     position: absolute;
@@ -104,8 +104,6 @@ body{
     left: 30px;
     width: fit-content;
 }
-
-/*--------------------------------------THE AREA HERE HAS NEW COMMAND BLOCKS--------------------------------------*/
 
 textarea {
     /*i first removed all the default settings in these four attributes*/
