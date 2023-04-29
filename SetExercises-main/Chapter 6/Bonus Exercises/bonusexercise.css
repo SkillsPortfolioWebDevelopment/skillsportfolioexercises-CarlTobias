@@ -1,0 +1,241 @@
+/*given that this creation is derivative of my temperature calculator exercise, a lot of the syntax is the same*/
+
+body {
+    /*for the body, i have the same layout, just using a different color*/
+    background-color: #E0D985;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    /*for the header section, i changed the background color*/
+    background-color: #615E39;
+
+    /*and made the width into fit-content instead of auto*/
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.title {
+    /*i set a different font for the title*/
+    font-family: 'Sigmar', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+nav {
+    /*i had a nav tag which contains content for a simple menu bar*/
+    
+    /*i aligned it to the center to make it seen just right under the title*/
+    text-align: center;
+    margin: auto;
+}
+
+.box {
+    /*for the box, i positioned it a little bit differently because i changed the size of the box*/
+
+    /*to position it in a centered manner, i used these 4 properties*/
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*here we have the size of the box*/
+    height: 550px;
+    width: 800px;
+    /*and the padding inside*/
+    padding: 30px;
+    /*with the color of the box along with the roundness of the corners*/
+    background-color: #616056;
+    border-radius: 10px;
+}
+
+.triangle-select {
+    /*for the box for the triangle-select i used these attributes to position it where i want*/
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.unit-select {
+    /*and same goes for this*/
+    text-align: right;
+    position: absolute;
+    top: 56px;
+    left: 50px;
+}
+
+#select1, #select2, .getValues {
+    /*for the boxes for the two select boxes and input boxes, i changed their styles and added a z-index to put it in front of everything*/
+    background-color: #E6E3CC;
+    color: #616056;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+
+    z-index: 1000;
+}
+
+
+/*for the next two .classes, there i changed the positions for the layout i want*/
+.select1 {
+    position: fixed;
+    left: 50px;
+}
+
+.select2 {
+    position: fixed;
+    left: 50px;
+}
+
+/*this is for the placeholder to be hidden, so it wouldn't be shown as an option*/
+.placeholder {
+    display: none;
+}
+
+/*for this class, i positioned the div into the right*/
+.calculator {
+    text-align: right;
+
+    position: absolute;
+    right: 45px;
+}
+
+button.clearb {
+    /*i positioned the button using these three*/
+    position: absolute;
+    right: 45px;
+    top: 90px;
+
+    /*here to changed the font properties*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #E6E3CC;
+    color: #615E39;
+
+    /*and here for the border styles*/
+    border-style: solid 1px;
+    border-color: #615E39;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button.convertb {
+    /*and for this button, it's basically the same as the one above, just positioned slighly differently*/
+    position: absolute;
+    right: 120px;
+    top: 90px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #E6E3CC;
+    color: #615E39;
+
+    border-style: solid 1px;
+    border-color: #615E39;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    /*this creates a hover function for the button*/
+
+    /*it essentially inverts its color for emphasis*/
+    background-color: #615E39;
+    color: #E6E3CC;
+}
+
+/*for the next few blocks of code, it changes the properties of the boxes that display the answer, formula, and solution*/
+.answer {
+    /*this changes the size, border, and visibility of the box*/
+    background-color: #E6E3CC;
+    border: #615E39 solid 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 740px;
+    
+    /*gave some padding, so it doesn't stick to the edges*/
+    padding: 10px;
+    
+    /*and repositioned the box using these*/
+    position: absolute;
+    top: 175px;
+    left: 50px;
+}
+
+/*the same goes for the next two*/
+.formula {
+    background-color: #E6E3CC;
+    border: #615E39 solid 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 740px;
+
+    padding: 10px;
+
+    position: absolute;
+    top: 310px;
+    left: 50px;
+}
+
+.solution {
+    background-color: #E6E3CC;
+    border: #615E39 solid 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 740px;
+
+    padding: 10px;
+
+    position: absolute;
+    top: 445px;
+    left: 50px;
+}
+
+/*and these are for the text contents of those boxes*/
+.answertext {
+    /*this makes it centered*/
+    margin: 0 auto;
+    width:fit-content;
+
+    /*and these change the font attributes*/
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*same goes for the next two blocks*/
+.formulatext {
+    margin: 0 auto;
+    width:fit-content;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.solutiontext {
+    margin: 0 auto;
+    width:fit-content;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*and finally, we have property changes to the footer areas*/
+footer {
+    /*i fixed the position to the bottom of the screen*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer {
+    /*and changed the font properties here*/
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #616056;
+}

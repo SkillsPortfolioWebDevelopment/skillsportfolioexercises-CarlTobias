@@ -1,0 +1,137 @@
+<!--for this exercise, the task is to create any webpage so long as it's fully functioning-->
+
+<!--
+    the webpage i made was pretty derivative of what i did for the "temperature calculator" activity
+    but besides that, it was also inspired from my high school days when i was having a hard time remembering formulas
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--to begin, i used the <head> tag to store <meta> tags for the program to have information-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The Magic Triangles of Physics</title>
+        <link rel="stylesheet" href="bonusexercise.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--inside the body, i first have a <header> tag which contains a <div> and <nav> tag-->
+        <header>
+            <!--i used the <div> tag for a .title class for a header text-->
+            <div class="title">The Magic Triangles of Physics</div>
+            <!--
+                and i used a nav tag to use an anchor tag for a simple one-item nav bar
+                (this would be used to redirect the user to the temperature calculator for easy navigation)
+            -->
+            <nav>
+                Go to: <a href="tempcalc(replica).html">Temperature Calculator</a>
+            </nav>
+        </header>
+        
+        <!--
+            after the <header>, i added a <form> tag similar to what i did in the previous exercise
+            
+            to reiterate, i use the <form> tag to be able to "submit" it later on using javascript
+        -->
+        <form class="box" id="myForm">
+            <!--
+                inside the tag, i have multiple div classes for different sections of the page...
+                these sections conatain:
+                    - <select>-<option> tags for the triangle formula
+                    - <select>-<option> tags for the unit to solve for
+                    - <input> tags for the user input
+                    - spaces for printing the answer, formula, and solution
+            -->
+            <div class="triangle-select">
+                <!--
+                    for the triangle selection section, there is a <select>-<option> setup...
+                    this is for the user to properly select which formula the computer will use to compute for their problem
+                -->
+                What triangle do you want to use?
+                <br>
+                <select id="select1" class="select1">
+                    <option value="" class="placeholder" disabled selected>Select a Magic Triangle</option>
+                    <option value="1" id="triangle1">The Speed Triangle</option>
+                    <option value="2" id="triangle2">Newton's Second Law</option>
+                    <option value="3" id="triangle3">The Momentum Triangle</option>
+                    <option value="4" id="triangle4">The Work Triangle</option>
+                    <option value="5" id="triangle5">The Power Triangle</option>
+                </select>
+            </div>
+            <div class="unit-select">
+                <!--
+                    once the user has selected an option above, then javascript will insert new options here...
+                    i only inserted two values (which cannot be selected) for the user to have some idea of what to do
+                    i also kept it empty so that the program will only show options that are related to the triangle formula chosen
+                    (which will be discussed in javascript later on)
+                -->
+                <br>
+                What unit do you want to measure?
+                <br>
+                <select id="select2" class="select2">
+                    <option value="" id="placeholder" class="placeholder" disabled selected>Select a unit to measure for</option>
+                    <option value="" disabled>Please select a triangle first</option>
+                </select>
+            </div>
+
+            <div class="calculator">
+                <!--
+                    once the user have chosen options for both boxes, the placeholder inside the <input> tag will change
+                    (using the help of javascript)
+
+                    so, the placeholder will vary depending on the value the user wants to calculate for...
+                    i did this to create less confusion for the user (so they will know what to input and where to do so)
+                -->
+                Enter values for calculation:
+                <br>
+                <input type="number" class="getValues" id="firstvalue" placeholder="Enter value here...">
+                <input type="number" class="getValues" id="secondvalue" placeholder="Enter value here...">
+            </div>
+            
+            <!--
+                the next two tags here are <buttons> that will eiter reset the page to default or calculate for the answer
+            -->
+            <button type="submit" value="Clear" class="clearb" onclick="clearForm()">Clear</button>
+            <button type="button" value="Convert" class="convertb" onclick="calculate()">Calculate</button>
+
+            <!--
+                when the user clicks the "Calculate" button, the onclick() attribute inside that tag will call a function i defined...
+                that function will calculate for the user's wanted value and then print the following:
+                    - the answer in the <div> identified as #answer;
+                    - the formula used in the <div> identified as #formula;
+                    - and the solution inside the <div> identified as #solution
+            -->
+            <div class="answer">
+                Answer:
+                <br><br>
+                <div class="answertext" id="answer"></div>
+            </div>
+
+            <div class="formula">
+                Formula:
+                <br><br>
+                <div class="formulatext" id="formula"></div>
+            </div>
+
+            <div class="solution">
+                Solution:
+                <br><br>
+                <div class="solutiontext" id="solution"></div>
+            </div>
+        </form>
+
+        <footer>
+            <div class="footer">Calc Inc.</div>
+        </footer>
+        <script src="bonusexercise.js"></script>
+    </body>
+</html>
