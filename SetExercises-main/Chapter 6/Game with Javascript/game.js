@@ -4,6 +4,7 @@ const green = document.getElementById("green");
 const red = document.getElementById("red");
 const yellow = document.getElementById("yellow");
 const blue = document.getElementById("blue");
+const gamecircle = document.getElementsByClassName("panels")
 
 // next, i defined values using let because these vlues will change at some point
 
@@ -12,12 +13,8 @@ let simon = [];
 // one for the player's inputs
 let player = [];
 // and two score variables set to 0
-const scoreDisplay = document.getElementById("score");
-const highscoreDisplay = document.getElementById("highscore");
-
-// also defined two more variables that get the id of the start button and scoreboard
-const livescoreboard = document.getElementById("livescoreboard");
-const start = document.getElementById("startbutton");
+let score = 0;
+let highscore = 0;
 
 
 // the first function allows the computer (simon) to call a random color
@@ -39,24 +36,18 @@ function saysSimon() {
 }
 
 // this function highlights the current color that simon is showing
-function colorHighlighted() {
-    const list = document.getElementById("panels").classList;
-    list.add("green");
+function colorHighlighted(panels) {
+    const gamecircle = document.getElementsByClassName("panels");
 
     setTimeout(() => {
-        colorChange.list.remove("active");
+        colorChange.classList.remove("active");
         enableUserInput();
     }, 400);
 }
 
 // the next function is responsible for playing simon's sequence
 function simonPlay() {
-    // first i display the scoreboard and hide the start button
-    livescoreboard.style.display = "block";
-    livescoreboard.style.zIndex = 1000;
-    start.style.display = "none";
-
-    // then i initialize a variable to 0
+    // first i initialize a variable to 0
     let a = 0;
 
     // then i created an anonymous function;
@@ -89,17 +80,17 @@ function userInput(panels) {
     // if it does, then the a point is added and displayed
     else if (player.length === simon.length) {
         score++;
-        scoreDisplay.textContent = score;
+        scoreDisplay.textContent=score;
 
         // now, if "score" is higher than the value of "highscore," then "score" will now be considered as the highscore
         if (score > highscore) {
             highscore = score;
             updateHighScore();
         }
-        
+
         // and the "player" array will be reverted back to empty
         player = [];
-        
+
         // and this will be creating a one second pause before the next round starts
         setTimeout(() => {
             saysSimon();

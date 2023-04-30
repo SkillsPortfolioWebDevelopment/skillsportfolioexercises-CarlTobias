@@ -134,6 +134,8 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 45px;
+
+    display: none;
     
     /*and ued these to position it*/
     position: absolute;

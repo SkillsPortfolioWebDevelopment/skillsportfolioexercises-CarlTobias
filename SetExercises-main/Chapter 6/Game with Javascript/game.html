@@ -44,18 +44,6 @@
 
                 <div class="panels" id="red"></div>
             </div>
-
-            <!--in the middle of the game area, i added a center circle that will hold the menu (which displays the start button and live score board)-->
-            <div class="centercircle">
-                <div class="menucircle">
-                    <!--there is an onclick() attribute here that calls the main function that executes the game-->
-                    <div class="startbutton" onclick="saysSimon()">
-                        Start
-                    </div>
-
-                    <div class="scoreboardlive" id="score">00</div>
-                </div>
-            </div>
             
             <!--and here, i added the two bottom panels (yellow and blue)-->
             <div class="bottom">
@@ -64,6 +52,19 @@
                 <div class="panels" id="blue"></div>
             </div>
         </div>
+
+        <!--and for the menu, i added a center circle that will hold the menu (which displays the start button and live score board)-->
+        <div class="centercircle">
+            <div class="menucircle">
+                <!--there is an onclick() attribute here that calls the main function that executes the game-->
+                <div class="startbutton" onclick="saysSimon()">
+                    Start
+                </div>
+
+                <div class="scoreboardlive" id="score">00</div>
+            </div>
+        </div>
+
         <!--finally, i added a <script> tag so that i can call the external .js file-->
         <script src="game.js"></script>
     </body>
