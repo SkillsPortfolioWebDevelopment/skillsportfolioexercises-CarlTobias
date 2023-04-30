@@ -1,0 +1,148 @@
+/*a lot of the css i used here is used to make the game look really pretty*/
+/*again, the program is tailored to my screen because i still have yet to learn about making pages adaptable*/
+
+body {
+    /*for the body, i added a backgroundcolorand a custom font from google fonts*/
+    background-color: #453129;
+    font-family: 'Press Start 2P', cursive;
+    
+    /*and added this for spaing purposes*/
+    margin: auto;
+    margin-top: 82px;
+    width: fit-content;
+}
+
+.title {
+    /*for the .title class, i made the font 25px big*/
+    font-size: 25px;
+    
+    /*and positioned it inside the menu circle using these four codes*/
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*and i put the element in front of the others using the z-index*/
+    z-index: 1000;
+}
+
+.panels {
+    /*for the .panels class, i defined their size through height and width*/
+    width: 300px;
+    height: 300px;
+
+    /*i used these to arrange their spacing*/
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;;
+
+    /*and this to make the cursor change into a pointer to indicate to the player that the element is clickable*/
+    cursor: pointer;
+}
+
+/*the four ids here change the color and border-radius (to make them rounded) of their respective panels*/
+#green {
+    background-color: #3edd4b;
+    border-top-left-radius: 100%;
+}
+
+#red {
+    background-color: #dd4b3e;
+    border-top-right-radius: 100%;
+}
+
+#yellow  {
+    background-color: #ffea37;
+    border-bottom-left-radius: 100%;
+}
+
+#blue {
+    background-color: #4b3edd;
+    border-bottom-right-radius: 100%;
+}
+
+/*and this will be used to highlight the panel being presented by "simon" and being clicked by the user*/
+.active {
+    background-color: #ffffff;
+}
+
+/*i defined the area of the center circle using this .class*/
+.centercircle {
+    background-color: #453129;
+
+    /*size was defined here*/
+    height: 450px;
+    width: 450px;
+    /*because <div> tags are parallelograms, i made the border-radius 100% to make the corners as round as possible to the point where it becomes a circle*/
+    border-radius: 100%;
+
+    /*and like earlier, i used these properties here to center the <div>*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*this block here goes inside the .centercircle class*/
+.menucircle {
+    /*i changed its background to make it stand out from the center circle*/
+    background-color: #aaaaaa;
+
+    /*defined its size and made it circular using the border-radius attribute*/
+    height: 425px;
+    width: 425px;
+    border-radius: 100%;
+
+    /*and these again for positioning*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.startbutton {
+    /*for the start button, i changed the background color and added some padding for the text*/
+    background-color: #453129;
+    padding: 10px;
+
+    /*used this for the user's clarity once again*/
+    cursor: pointer;
+
+    /*and this to position the <div> slightly below center so it doesn't block the .title*/
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*and to make sure the element can be seen and clicked, i used the z-index to put it in front*/
+    z-index: 1000;
+}
+
+.startbutton:hover {
+    /*i also used a hover function for the button to draw attention to the button in an aesthetically pleasing way*/
+
+    /*the attributes used here are just to change text color and add an underline under it*/
+    color: #aaaaaa;
+    text-decoration: underline;
+}
+
+/*and finally the scoreboard area*/
+.scoreboardlive {
+    /*this element will not be seen unless the game has been started*/
+
+    background-color: #453129;
+    color: #ef2513;
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+    
+    /*and ued these to position it*/
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highscore {
+    position: absolute;
+    left: 300px;
+}

@@ -1,0 +1,199 @@
+/*for the css, i used pretty much just the basics*/
+
+
+body {
+    /*inside the body, i used "background-color" to change the color of the page from white to light blue*/
+    background-color: #76B4FB;
+    /*and "font-family" to change the overall font of the page*/
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    /*i did the same for the header to make it stand out from the body*/
+    background-color: #5E6B7A;
+}
+
+nav {
+    text-align: center;
+}
+
+.title {
+    /*for the .title class, i changed the font, font-size, and text-alignment (respectively) for aesthetics*/
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.box {
+    /*
+        for this .box class (used for the form), i created the main box panel that contains everything;
+        in order to do that, i used the attributes below...
+    */
+
+    /*the three here are used to position it as centered as i can (relative to my screen)*/
+    position: absolute;
+    top: 200px;
+    left: 32%;
+
+    /*these three here define the size of the panel*/
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+
+    /*and these change the main design like the color and the roundness of the corner*/
+    background-color: #3C5B80;
+    border-radius: 10px;
+}
+
+/*
+    the next two .classes are for the <select>-<option> tags
+
+    each of them have the same attributes with just minor differences;
+    both have their text aligned to the right and positioned absolutely,
+    but their top and left are spaced appropriately
+*/
+.from {
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.to {
+    text-align: right;
+    position: absolute;
+    top: 56px;
+    left: 72px;
+}
+
+#select1, #select2, #convertit {
+    /*
+        here, we have the different ids for the <select>-<option> and <input> boxes
+
+        the attributes here were explained earlier, they change how the boxes look
+        from the color of the background and font, the font itself, and the roundness of the boxes
+    */
+    background-color: #B7D1EE;
+    color: #5E6B7A;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+}
+
+.placeholder {
+    /*this removes that one <option> tag from the view of the user*/
+    display: none;
+}
+
+.converter {
+    /*similar to the .from and .to classes, this positions the div that contains the <input> tag*/
+    text-align: right;
+
+    position: absolute;
+    right: 45px;
+}
+
+/*the next three blocks here contains code for the buttons*/
+
+button.clearb {
+    /*the three here contain attributes for positioning (explained earlier)*/
+    position: absolute;
+    left: 50px;
+    top: 105px;
+
+    /*the four here are attributes for appearance (like font, color, size, etc.)*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #B7D1EE;
+    color: #5E6B7A;
+
+    /*  and here we have appearance attributes as well,
+        but more focused on the button itself (like the padding, corner roundness, etc.)
+    */
+    border-style: solid 1px;
+    border-color: #5E6B7A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button.convertb {
+    /*here, contains the same attributes as the one right above, with changes to the positioning of the button*/
+    position: absolute;
+    right: 45px;
+    top: 105px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #B7D1EE;
+    color: #5E6B7A;
+
+    border-style: solid 1px;
+    border-color: #5E6B7A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    /*
+        and this section takes care of what it would look like when the mouse of the user hovers over the button
+        (it inverts the colors of the background and font)
+    */
+    background-color: #5E6B7A;
+    color: #76B4FB;
+}
+
+/*now, the final four blocks styles the answer and solution box and the text inside it*/
+.answer {
+    /*the five here styles the box for the <div> class*/
+    background-color: #B7D1EE;
+    border: #5E6B7A solid 3px;
+    border-radius: 5px;
+    height: 150px;
+    width: 440px;
+    
+    /*gave some padding so that the text will not be ticking too close to the edges*/
+    padding: 10px;
+
+    /*and these position the box where i want it to be*/
+    position: absolute;
+    top: 175px;
+    left: 50px;
+}
+
+.solution {
+    /*the absolute same here as on top, just with changes to the positioning once again*/
+    background-color: #B7D1EE;
+    border: #5E6B7A solid 3px;
+    border-radius: 5px;
+    height: 150px;
+    width: 440px;
+
+    padding: 10px;
+
+    position: absolute;
+    top: 360px;
+    left: 50px;
+}
+
+.answertext {
+    /*these two help with centering the text horizontally*/
+    margin: 0 auto;
+    width:fit-content;
+
+    /*and this changes the text styles to stand out for the user to propeerly see*/
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.solutiontext {
+    /*
+        and again, it's completely the same as the one on top,
+        but i changed the font-size because this section should be slightly less prominent than the one above
+    */
+    margin: 0 auto;
+    width:fit-content;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}

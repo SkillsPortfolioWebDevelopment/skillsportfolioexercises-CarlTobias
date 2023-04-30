@@ -1,0 +1,70 @@
+<!--for this activity, the task is to create a simple game using html, css, and js using all our knowledge from previous lessons-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <!--the first thing i did was setup my <head> tag with the usual <meta> tags i use-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Simon Says!</title>
+
+        <link rel="stylesheet" href="game.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <!--
+        for this activity, i've decided to recreate a game called "Simon Says"
+        it is an actual physical toy that requires a player to repeat a certain pattern (using four colors)
+        that increases its length by one every turn, the goal is to get the longest pattern you can 
+        without getting anything wrong
+    -->
+    <body id="simonPlay">
+        <!--in the body, i used numerous <div> tags to be able to separate multiple elements and arrange them appropriately-->
+
+        <!--first, i added the title using a .title class-->
+        <div class="title">Simon Says!</div>
+
+        <!--next, i created a <div> to be able to display the player's high score-->
+        <div class="scores">
+            <div class="highscore">
+                Highscore: <div id="highscore">00</div>
+            </div>
+        </div>
+
+        <!--and this parent <div> is what holds the main game area-->
+        <div class="gamecircle">
+            <!--i added two child <div> tags here for the two top panels (green and red)-->
+            <div class="top">
+                <div class="panels" id="green"></div>
+
+                <div class="panels" id="red"></div>
+            </div>
+
+            <!--in the middle of the game area, i added a center circle that will hold the menu (which displays the start button and live score board)-->
+            <div class="centercircle">
+                <div class="menucircle">
+                    <!--there is an onclick() attribute here that calls the main function that executes the game-->
+                    <div class="startbutton" onclick="saysSimon()">
+                        Start
+                    </div>
+
+                    <div class="scoreboardlive" id="score">00</div>
+                </div>
+            </div>
+            
+            <!--and here, i added the two bottom panels (yellow and blue)-->
+            <div class="bottom">
+                <div class="panels" id="yellow"></div>
+
+                <div class="panels" id="blue"></div>
+            </div>
+        </div>
+        <!--finally, i added a <script> tag so that i can call the external .js file-->
+        <script src="game.js"></script>
+    </body>
+</html>
